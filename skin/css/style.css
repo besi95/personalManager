@@ -1,0 +1,8 @@
+#success_message {
+    display: none;
+}
+
+a:hover {
+    color:#4CAF50;
+    text-decoration: none;
+}
