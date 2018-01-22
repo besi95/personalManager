@@ -1,6 +1,6 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $('#contact_form').bootstrapValidator({
-        // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+
         feedbackIcons: {
             valid: 'glyphicon glyphicon-ok',
             invalid: 'glyphicon glyphicon-remove',
@@ -11,6 +11,7 @@ $(document).ready(function() {
                 validators: {
                     stringLength: {
                         min: 2,
+                        message: 'Name must be at least two characters'
                     },
                     notEmpty: {
                         message: 'Please enter your First Name'
@@ -21,6 +22,7 @@ $(document).ready(function() {
                 validators: {
                     stringLength: {
                         min: 2,
+                        message: 'Lastname must be at least 2 characters'
                     },
                     notEmpty: {
                         message: 'Please enter your Last Name'
@@ -31,6 +33,7 @@ $(document).ready(function() {
                 validators: {
                     stringLength: {
                         min: 8,
+                        message: 'Username must be at least 8 characters'
                     },
                     notEmpty: {
                         message: 'Please enter your Username'
@@ -57,6 +60,10 @@ $(document).ready(function() {
                     stringLength: {
                         min: 8,
                     },
+                    identical: {
+                        field: 'user_password',
+                        message: 'The password and its confirm are not the same'
+                    },
                     notEmpty: {
                         message: 'Please confirm your Password'
                     }
@@ -75,25 +82,19 @@ $(document).ready(function() {
             contact_no: {
                 validators: {
                     stringLength: {
-                        min: 12,
+                        min: 10,
                         max: 12,
-                        notEmpty: {
-                            message: 'Please enter your Contact No.'
-                        }
+                        message: 'Number must be between 10 and 12 digits'
+                    },
+                    notEmpty: {
+                        message: 'Please enter your Contact No.'
                     }
-                },
-                department: {
-                    validators: {
-                        notEmpty: {
-                            message: 'Please select your Department/Office'
-                        }
-                    }
-                },
-            }
+                }
+            },
         }
     })
-        .on('success.form.bv', function(e) {
-            $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
+        .on('success.form.bv', function (e) {
+            $('#success_message').slideDown({opacity: "show"}, "slow");
             $('#contact_form').data('bootstrapValidator').resetForm();
 
             // Prevent form submission
@@ -106,7 +107,7 @@ $(document).ready(function() {
             var bv = $form.data('bootstrapValidator');
 
             // Use Ajax to submit form data
-            $.post($form.attr('action'), $form.serialize(), function(result) {
+            $.post($form.attr('action'), $form.serialize(), function (result) {
                 console.log(result);
             }, 'json');
         });
