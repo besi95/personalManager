@@ -6,3 +6,26 @@ a:hover {
     color:#4CAF50;
     text-decoration: none;
 }
+
+.form-group.required .control-label:after {
+    content:" *";
+    color: #ff5436;
+}
+
+.red-alert {
+    color: #ff9a58;
+    font-size: 13px;
+}
+
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*.admin-well-panel {*/
+    /*background-image: ;*/
+/*}*/
+
+.container{
+    width: 100%;
+}
