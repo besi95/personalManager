@@ -83,14 +83,14 @@ $(document).ready(function () {
                 validators: {
                     stringLength: {
                         min: 10,
-                        max: 12,
-                        message: 'Number must be between 10 and 12 digits'
+                        max: 10,
+                        message: 'Number must be 10 digits.'
                     },
                     notEmpty: {
                         message: 'Please enter your Contact No.'
                     }
                 }
-            },
+            }
         }
     })
         .on('success.form.bv', function (e) {

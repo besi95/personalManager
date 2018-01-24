@@ -12,13 +12,25 @@ $dateOfBirth = $params['birth_date'];
 $userName = $params['user_name'];
 $password = md5($params['user_password']);
 $contactNo = $params['contact_no'];
-$plan = 1;
+$plan = $params['plan'];
+
+//check if email exists
+$sql = "SELECT * FROM perdorues WHERE email = '{$email}'";
+$result = mysqli_query($conn, $sql);
+$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+
+$count = mysqli_num_rows($result);
+if($count > 0){
+    $error = "User with this email already exists.";
+    die("user exists");
+
+}
 
 // prepare and bind parameters to prevent sql injection
 
 $stmt = $conn->prepare(
-    "INSERT INTO user (name, surname, username, email,
-    date_of_birth,plan_id,phone_nr,password)
+    "INSERT INTO perdorues (emri, mbiemri, username, email,
+    datelindja,plan_id,telefon,pasuord)
 VALUES (?,?,?,?,?,?,?,?)");
 
 $stmt->bind_param("ssssssis",
