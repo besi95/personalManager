@@ -28,8 +28,23 @@ $registrationAction = getActionUrl('registration');
 
 <body>
 
-<div class="container">
-
+<div class="container" style="padding: 0;">
+    <nav class="navbar  navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href=homepage.phtml">KeepItSafe</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="login.phtml">LOGIN</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br><br>
     <form class="well form-horizontal" action="<?php echo $registrationAction ?>" method="post" id="contact_form">
         <fieldset>
 
@@ -180,7 +195,11 @@ $registrationAction = getActionUrl('registration');
         </fieldset>
     </form>
 </div>
+<footer class="container-fluid text-center footer-custom">
 
+
+    <p>Copyright Besim Saraci</p>
+</footer>
 </div>
 
 

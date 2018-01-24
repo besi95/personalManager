@@ -24,9 +24,25 @@ $loginAction = getActionUrl('login');
 
 <body>
 
-<div class="container">
+<div class="container" style="padding: 0px;">
+    <nav class="navbar  navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href=homepage.phtml">KeepItSafe</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="registration.phtml">REGISTER</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br><br>
 
-    <form class="well form-horizontal" action="<?php echo $loginAction?>" method="post"  id="login_form">
+    <form  style="height: 550px; border-radius: 0px" class="well form-horizontal" action="<?php echo $loginAction?>" method="post"  id="login_form">
         <fieldset>
 
             <!-- Form Name -->
@@ -73,6 +89,12 @@ $loginAction = getActionUrl('login');
         </fieldset>
     </form>
 </div>
+
+<footer class="container-fluid text-center footer-custom">
+
+
+    <p>Copyright Besim Saraci</p>
+</footer>
 </div>
 
 
