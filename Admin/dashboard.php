@@ -6,7 +6,7 @@
 	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>Paper Dashboard by Creative Tim</title>
+	<title>Admin Dashboard</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -44,58 +44,64 @@
 
     	<div class="sidebar-wrapper">
             <div class="logo">
-                <a href="http://www.creative-tim.com" class="simple-text">
-                    Creative Tim
+                <a href="dashboard.php" class="simple-text">
+                    Keep it Safe
                 </a>
             </div>
 
             <ul class="nav">
                 <li class="active">
-                    <a href="dashboard.html">
+                    <a href="dashboard.php">
                         <i class="ti-panel"></i>
                         <p>Dashboard</p>
                     </a>
                 </li>
                 <li>
-                    <a href="user.html">
+                    <a href="user.php">
                         <i class="ti-user"></i>
-                        <p>User Profile</p>
+                        <p>Profili i Përdoruesit</p>
                     </a>
                 </li>
                 <li>
-                    <a href="table.html">
+                    <a href="dokumente.php">
                         <i class="ti-view-list-alt"></i>
-                        <p>Table List</p>
+                        <p>Dokumente</p>
                     </a>
                 </li>
                 <li>
-                    <a href="typography.html">
-                        <i class="ti-text"></i>
-                        <p>Typography</p>
+                    <a href="karta.php">
+                        <i class="ti-credit-card"></i>
+                        <p>Karta Bankare</p>
                     </a>
                 </li>
                 <li>
-                    <a href="icons.html">
-                        <i class="ti-pencil-alt2"></i>
-                        <p>Icons</p>
+                    <a href="kontakte_telefonike.php">
+                        <i class="ti-mobile"></i>
+                        <p>Kontakte Telefonike</p>
                     </a>
                 </li>
                 <li>
-                    <a href="maps.html">
-                        <i class="ti-map"></i>
-                        <p>Maps</p>
+                    <a href="shenime.php">
+                        <i class="ti-book"></i>
+                        <p>Shënime</p>
+                    </a>
+                </li>
+				<li>
+                    <a href="email.php">
+                        <i class="ti-email"></i>
+                        <p>Email</p>
                     </a>
                 </li>
                 <li>
-                    <a href="notifications.html">
-                        <i class="ti-bell"></i>
-                        <p>Notifications</p>
-                    </a>
-                </li>
-				<li class="active-pro">
-                    <a href="upgrade.html">
+                    <a href="export.php">
                         <i class="ti-export"></i>
-                        <p>Upgrade to PRO</p>
+                        <p>Export</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="njoftime.php">
+                        <i class="ti-bell"></i>
+                        <p>Njoftime</p>
                     </a>
                 </li>
             </ul>
@@ -116,31 +122,11 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="ti-panel"></i>
-								<p>Stats</p>
-                            </a>
-                        </li>
-                        <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="ti-bell"></i>
-                                    <p class="notification">5</p>
-									<p>Notifications</p>
-									<b class="caret"></b>
-                              </a>
-                              <ul class="dropdown-menu">
-                                <li><a href="#">Notification 1</a></li>
-                                <li><a href="#">Notification 2</a></li>
-                                <li><a href="#">Notification 3</a></li>
-                                <li><a href="#">Notification 4</a></li>
-                                <li><a href="#">Another notification</a></li>
-                              </ul>
-                        </li>
+
 						<li>
                             <a href="#">
-								<i class="ti-settings"></i>
-								<p>Settings</p>
+								<i class="ti-user"></i>
+								<p>Logout</p>
                             </a>
                         </li>
                     </ul>
@@ -153,7 +139,7 @@
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="col-lg-4 col-sm-6">
                         <div class="card">
                             <div class="content">
                                 <div class="row">
@@ -164,7 +150,7 @@
                                     </div>
                                     <div class="col-xs-7">
                                         <div class="numbers">
-                                            <p>Capacity</p>
+                                            <p>Kapaciteti</p>
                                             105GB
                                         </div>
                                     </div>
@@ -172,13 +158,13 @@
                                 <div class="footer">
                                     <hr />
                                     <div class="stats">
-                                        <i class="ti-reload"></i> Updated now
+                                        <i class="ti-reload"></i> Përditëso tani
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="col-lg-4 col-sm-6">
                         <div class="card">
                             <div class="content">
                                 <div class="row">
@@ -189,7 +175,7 @@
                                     </div>
                                     <div class="col-xs-7">
                                         <div class="numbers">
-                                            <p>Revenue</p>
+                                            <p>Të ardhurat</p>
                                             $1,345
                                         </div>
                                     </div>
@@ -197,13 +183,13 @@
                                 <div class="footer">
                                     <hr />
                                     <div class="stats">
-                                        <i class="ti-calendar"></i> Last day
+                                        <i class="ti-calendar"></i> Dita e djeshme 
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="col-lg-4 col-sm-6">
                         <div class="card">
                             <div class="content">
                                 <div class="row">
@@ -214,7 +200,7 @@
                                     </div>
                                     <div class="col-xs-7">
                                         <div class="numbers">
-                                            <p>Errors</p>
+                                            <p>Gabimet</p>
                                             23
                                         </div>
                                     </div>
@@ -222,32 +208,7 @@
                                 <div class="footer">
                                     <hr />
                                     <div class="stats">
-                                        <i class="ti-timer"></i> In the last hour
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card">
-                            <div class="content">
-                                <div class="row">
-                                    <div class="col-xs-5">
-                                        <div class="icon-big icon-info text-center">
-                                            <i class="ti-twitter-alt"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-7">
-                                        <div class="numbers">
-                                            <p>Followers</p>
-                                            +45
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="footer">
-                                    <hr />
-                                    <div class="stats">
-                                        <i class="ti-reload"></i> Updated now
+                                        <i class="ti-timer"></i> Përgjatë orëve të fundit
                                     </div>
                                 </div>
                             </div>
@@ -259,20 +220,20 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="header">
-                                <h4 class="title">Users Behavior</h4>
-                                <p class="category">24 Hours performance</p>
+                                <h4 class="title"> Sjellja e përdoruesve</h4>
+                                <p class="category">Aktiviteti në 24 orë</p>
                             </div>
                             <div class="content">
                                 <div id="chartHours" class="ct-chart"></div>
                                 <div class="footer">
                                     <div class="chart-legend">
-                                        <i class="fa fa-circle text-info"></i> Open
-                                        <i class="fa fa-circle text-danger"></i> Click
-                                        <i class="fa fa-circle text-warning"></i> Click Second Time
+                                        <i class="fa fa-circle text-info"></i> Hap
+                                        <i class="fa fa-circle text-danger"></i> Kliko
+                                        <i class="fa fa-circle text-warning"></i> Kliko 2 herë
                                     </div>
                                     <hr>
                                     <div class="stats">
-                                        <i class="ti-reload"></i> Updated 3 minutes ago
+                                        <i class="ti-reload"></i> Përditësuar 3 minuta më parë
                                     </div>
                                 </div>
                             </div>
@@ -283,15 +244,15 @@
                     <div class="col-md-6">
                         <div class="card">
                             <div class="header">
-                                <h4 class="title">Email Statistics</h4>
-                                <p class="category">Last Campaign Performance</p>
+                                <h4 class="title">Statistikat e email-eve</h4>
+                              
                             </div>
                             <div class="content">
                                 <div id="chartPreferences" class="ct-chart ct-perfect-fourth"></div>
 
                                 <div class="footer">
                                     <div class="chart-legend">
-                                        <i class="fa fa-circle text-info"></i> Open
+                                        <i class="fa fa-circle text-info"></i> 
                                         <i class="fa fa-circle text-danger"></i> Bounce
                                         <i class="fa fa-circle text-warning"></i> Unsubscribe
                                     </div>
@@ -332,28 +293,8 @@
 
         <footer class="footer">
             <div class="container-fluid">
-                <nav class="pull-left">
-                    <ul>
-
-                        <li>
-                            <a href="http://www.creative-tim.com">
-                                Creative Tim
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://blog.creative-tim.com">
-                               Blog
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.creative-tim.com/license">
-                                Licenses
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
                 <div class="copyright pull-right">
-                    &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by <a href="http://www.creative-tim.com">Creative Tim</a>
+                    &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by <a href="#">Keep It Safe</a>
                 </div>
             </div>
         </footer>
@@ -393,7 +334,7 @@
 
         	$.notify({
             	icon: 'ti-gift',
-            	message: "Welcome to <b>Paper Dashboard</b> - a beautiful Bootstrap freebie for your next project."
+            	message: "Mirë se erdhët në <b>Keep It Safe</b> - platforma e duhur në ofrimin e sigurisë dhe interaktivitetit më bashkëkohor."
 
             },{
                 type: 'success',

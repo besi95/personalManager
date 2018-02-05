@@ -33,7 +33,7 @@
 <body>
 
 <div class="wrapper">
-	<div class="sidebar" data-background-color="white" data-active-color="danger">
+	<div class="sidebar" data-background-color="black" data-active-color="danger">
 
     <!--
 		Tip 1: you can change the color of the sidebar's background using: data-background-color="white | black"
@@ -49,13 +49,13 @@
 
             <ul class="nav">
                 <li>
-                    <a href="dashboard.html">
+                    <a href="dashboard.php">
                         <i class="ti-panel"></i>
                         <p>Dashboard</p>
                     </a>
                 </li>
                 <li>
-                    <a href="user.html">
+                    <a href="user.php">
                         <i class="ti-user"></i>
                         <p>User Profile</p>
                     </a>
@@ -85,7 +85,7 @@
                     </a>
                 </li>
                 <li class="active">
-                    <a href="notifications.html">
+                    <a href="notifications.php">
                         <i class="ti-bell"></i>
                         <p>Notifications</p>
                     </a>

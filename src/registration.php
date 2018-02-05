@@ -3,6 +3,7 @@
  * this file will handle registration process
  */
 include 'config.php';
+$errors = array();
 
 $params = $_POST;
 $firstName = $params['first_name'];
@@ -14,41 +15,47 @@ $password = md5($params['user_password']);
 $contactNo = $params['contact_no'];
 $plan = $params['plan'];
 
-//check if email exists
+//check if email exists in users table
 $sql = "SELECT * FROM perdorues WHERE email = '{$email}'";
-$result = mysqli_query($conn, $sql);
-$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+$result = $conn->query($sql);
 
-$count = mysqli_num_rows($result);
+$count = $result->num_rows;
+
 if($count > 0){
-    $error = "User with this email already exists.";
-    die("user exists");
 
-}
+    $errors[] = "Perdoruesi me kete email ekziston.";
+    setcookie('registration_status', json_encode($errors), time() + 3600, '/');
+    header('Location: ../views/login.php');
+
+
+}else {
 
 // prepare and bind parameters to prevent sql injection
 
-$stmt = $conn->prepare(
-    "INSERT INTO perdorues (emri, mbiemri, username, email,
+    $stmt = $conn->prepare(
+        "INSERT INTO perdorues (emri, mbiemri, username, email,
     datelindja,plan_id,telefon,pasuord)
 VALUES (?,?,?,?,?,?,?,?)");
 
-$stmt->bind_param("ssssssis",
-    $firstName,
-    $lastName,
-    $userName,
-    $email,
-    $dateOfBirth,
-    $plan,
-    $contactNo,
-    $password
-);
+    $stmt->bind_param("ssssssis",
+        $firstName,
+        $lastName,
+        $userName,
+        $email,
+        $dateOfBirth,
+        $plan,
+        $contactNo,
+        $password
+    );
 
-$stmt->execute();
+    $stmt->execute();
 
-echo "New User created successfully!";
-$stmt->close();
-$conn->close();
+    $stmt->close();
+    $conn->close();
 
-header('Location: http://localhost/paw/personalManager/');
+    $errors[] = "Perdoruesi u krijua me sukses.";
+    setcookie('registration_status', json_encode($errors), time() + 3600, '/');
+    header('Location: ../views/login.php');
+
+}
 

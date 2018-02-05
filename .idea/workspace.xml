@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3918d104-c24e-4e4f-9c27-afe8d2c14a32" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/views/footer.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/views/header.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/views/test" />
+      <change beforePath="$PROJECT_DIR$/Admin/assets/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/Admin/assets/css/bootstrap.min.css" />
+      <change beforePath="$PROJECT_DIR$/Admin/assets/css/themify-icons.css" afterPath="$PROJECT_DIR$/Admin/assets/css/themify-icons.css" />
+      <change beforePath="$PROJECT_DIR$/Admin/assets/fonts/themify.eot" afterPath="$PROJECT_DIR$/Admin/assets/fonts/themify.eot" />
+      <change beforePath="$PROJECT_DIR$/Admin/assets/fonts/themify.svg" afterPath="$PROJECT_DIR$/Admin/assets/fonts/themify.svg" />
+      <change beforePath="$PROJECT_DIR$/Admin/assets/fonts/themify.ttf" afterPath="$PROJECT_DIR$/Admin/assets/fonts/themify.ttf" />
+      <change beforePath="$PROJECT_DIR$/Admin/assets/fonts/themify.woff" afterPath="$PROJECT_DIR$/Admin/assets/fonts/themify.woff" />
+      <change beforePath="$PROJECT_DIR$/Admin/assets/img/apple-icon.png" afterPath="$PROJECT_DIR$/Admin/assets/img/apple-icon.png" />
+      <change beforePath="$PROJECT_DIR$/Admin/assets/img/favicon.png" afterPath="$PROJECT_DIR$/Admin/assets/img/favicon.png" />
+      <change beforePath="$PROJECT_DIR$/Admin/assets/js/bootstrap-notify.js" afterPath="$PROJECT_DIR$/Admin/assets/js/bootstrap-notify.js" />
+      <change beforePath="$PROJECT_DIR$/Admin/assets/js/chartist.min.js" afterPath="$PROJECT_DIR$/Admin/assets/js/chartist.min.js" />
+      <change beforePath="$PROJECT_DIR$/Admin/assets/js/demo.js" afterPath="$PROJECT_DIR$/Admin/assets/js/demo.js" />
+      <change beforePath="$PROJECT_DIR$/Admin/assets/sass/paper-dashboard.scss" afterPath="$PROJECT_DIR$/Admin/assets/sass/paper-dashboard.scss" />
+      <change beforePath="$PROJECT_DIR$/Admin/assets/sass/paper/_buttons.scss" afterPath="$PROJECT_DIR$/Admin/assets/sass/paper/_buttons.scss" />
+      <change beforePath="$PROJECT_DIR$/Admin/assets/sass/paper/_inputs.scss" afterPath="$PROJECT_DIR$/Admin/assets/sass/paper/_inputs.scss" />
+      <change beforePath="$PROJECT_DIR$/Admin/assets/sass/paper/_misc.scss" afterPath="$PROJECT_DIR$/Admin/assets/sass/paper/_misc.scss" />
+      <change beforePath="$PROJECT_DIR$/Admin/assets/sass/paper/_sidebar-and-main-panel.scss" afterPath="$PROJECT_DIR$/Admin/assets/sass/paper/_sidebar-and-main-panel.scss" />
+      <change beforePath="$PROJECT_DIR$/Admin/dashboard.html" afterPath="$PROJECT_DIR$/Admin/dashboard.html" />
+      <change beforePath="$PROJECT_DIR$/Admin/notifications.html" afterPath="$PROJECT_DIR$/Admin/notifications.html" />
+      <change beforePath="$PROJECT_DIR$/Admin/upgrade.html" afterPath="$PROJECT_DIR$/Admin/upgrade.html" />
+      <change beforePath="$PROJECT_DIR$/Admin/user.html" afterPath="$PROJECT_DIR$/Admin/user.html" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/test-infra/s3_cache.py" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/test-infra/s3_cache.py" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/test-infra/uncached-npm-install.sh" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/test-infra/uncached-npm-install.sh" />
+      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change beforePath="$PROJECT_DIR$/skin/css/style.css" afterPath="$PROJECT_DIR$/skin/css/style.css" />
+      <change beforePath="$PROJECT_DIR$/src/login.php" afterPath="$PROJECT_DIR$/src/login.php" />
+      <change beforePath="$PROJECT_DIR$/views/admin_dashboard.phtml" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change beforePath="$PROJECT_DIR$/views/eugerta.phtml" afterPath="$PROJECT_DIR$/views/eugerta.phtml" />
+      <change beforePath="$PROJECT_DIR$/views/footer.phtml" afterPath="$PROJECT_DIR$/skin/js/custom_scripts.js" />
+      <change beforePath="$PROJECT_DIR$/views/homepage.phtml" afterPath="$PROJECT_DIR$/views/homepage.php" />
+      <change beforePath="$PROJECT_DIR$/views/login.phtml" afterPath="$PROJECT_DIR$/views/login.php" />
+      <change beforePath="$PROJECT_DIR$/views/registration.phtml" afterPath="$PROJECT_DIR$/views/registration.php" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/skin/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="474">
+              <caret line="542" column="26" lean-forward="false" selection-start-line="542" selection-start-column="26" selection-end-line="542" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registration.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/registration.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="910">
+              <caret line="179" column="30" lean-forward="true" selection-start-line="179" selection-start-column="30" selection-end-line="179" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/test">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="571">
+              <caret line="179" column="30" lean-forward="false" selection-start-line="179" selection-start-column="30" selection-end-line="179" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>jumbotron</find>
+      <find>.navbar</find>
+      <find>.jumbotron.homepage-hero h1</find>
+      <find>blockquote-custom</find>
+      <find>slide</find>
+      <find>panel</find>
+      <find>max-wid</find>
+      <find>logo</find>
+      <find>font</find>
+      <find>about</find>
+      <find>footer</find>
+      <find>http://localhost/paw/personalManager</find>
+      <find>body</find>
+      <find>sele</find>
+      <find>option</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/views/style.css" />
+        <option value="$PROJECT_DIR$/views/homepage.phtml" />
+        <option value="$PROJECT_DIR$/skin/js/custom_scripts.js" />
+        <option value="$PROJECT_DIR$/views/footer.php" />
+        <option value="$PROJECT_DIR$/views/homepage.php" />
+        <option value="$PROJECT_DIR$/views/header.php" />
+        <option value="$PROJECT_DIR$/views/registration.php" />
+        <option value="$PROJECT_DIR$/views/test" />
+        <option value="$PROJECT_DIR$/skin/css/style.css" />
+        <option value="$PROJECT_DIR$/views/login.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="71" />
+    <option name="y" value="83" />
+    <option name="width" value="1359" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="personalManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="personalManager" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="personalManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="personalManager" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="personalManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="personalManager" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="skin" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="personalManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="personalManager" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="skin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="personalManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="personalManager" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\personalManager\skin\css" />
+      <recent name="C:\xampp\htdocs\personalManager\views" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3918d104-c24e-4e4f-9c27-afe8d2c14a32" name="Default" comment="" />
+      <created>1517343629270</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1517343629270</updated>
+      <workItem from="1517343631781" duration="5517000" />
+      <workItem from="1517651395281" duration="96000" />
+      <workItem from="1517652497319" duration="17186000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="22799000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16544656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/views/head.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/customer_dashboard.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin_dashboard.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/header.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/js/custom_scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="51" lean-forward="false" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/homepage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="100" column="38" lean-forward="false" selection-start-line="100" selection-start-column="34" selection-end-line="100" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="179" column="30" lean-forward="false" selection-start-line="179" selection-start-column="30" selection-end-line="179" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="41" column="15" lean-forward="false" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/registration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="910">
+          <caret line="179" column="30" lean-forward="true" selection-start-line="179" selection-start-column="30" selection-end-line="179" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="542" column="26" lean-forward="false" selection-start-line="542" selection-start-column="26" selection-end-line="542" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
