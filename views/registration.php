@@ -1,58 +1,30 @@
 <?php
-include '../functions.php';
+include ('../functions.php');
 $registrationAction = getActionUrl('registration');
+include ('header.php');
+
 ?>
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Become a Member</title>
-    <script src="http://localhost/paw/personalManager/bootstrap/modernizr.min.js" type="text/javascript"></script>
+    <script src="../bootstrap/modernizr.min.js" type="text/javascript"></script>
     <link rel='stylesheet prefetch'
-          href='http://localhost/paw/personalManager/bootstrap/bootstrap-validator/css/bootstrapValidator.min.css'>
-    <script src='http://localhost/paw/personalManager/bootstrap/js/jquery.min.js'></script>
-    <script src='http://localhost/paw/personalManager/bootstrap/bootstrap-validator/js/bootstrapvalidator.min.js'></script>
-    <link href="http://localhost/paw/personalManager/datepicker/css/bootstrap-datepicker.css">
-    <script src="http://localhost/paw/personalManager/datepicker/js/bootstrap-datepicker.js"></script>
-    <script src="http://localhost/paw/personalManager/skin/js/register_validation.js"></script>
-    <script src='http://localhost/paw/personalManager/bootstrap/bootstrap-3.2.0/dist/js/bootstrap.min.js'></script>
-    <link rel='stylesheet prefetch'
-          href='http://localhost/paw/personalManager/bootstrap/bootstrap-3.2.0/dist/css/bootstrap.min.css'>
-    <link rel='stylesheet prefetch'
-          href='http://localhost/paw/personalManager/bootstrap/bootstrap-3.2.0/dist/css/bootstrap-theme.min.css'>
-    <link rel="stylesheet" href="http://localhost/paw/personalManager/skin/css/style.css">
-
-
+          href='../bootstrap/bootstrap-validator/css/bootstrapValidator.min.css'>
+    <script src='../bootstrap/js/jquery.min.js'></script>
+    <script src='../bootstrap/bootstrap-validator/js/bootstrapvalidator.min.js'></script>
+    <script src="../skin/js/register_validation.js"></script>
 </head>
 
-<body>
 
-<div class="container" style="padding: 0;">
-    <nav class="navbar  navbar-fixed-top">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href=homepage.phtml">KeepItSafe</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="login.phtml">LOGIN</a></li>
-            </ul>
-        </div>
-    </nav>
-    <br><br>
-    <form class="well form-horizontal" action="<?php echo $registrationAction ?>" method="post" id="contact_form">
+<div class="login-container">
+   <div class="container">
+    <div class="row">
+        <form class="well form-horizontal" action="<?php echo $registrationAction ?>" method="post" id="contact_form">
         <fieldset>
 
             <!-- Form Name -->
             <legend>
                 <center><h2><b>Become a Member</b></h2></center>
             </legend>
-            <center><a href="http://localhost/paw/personalManager/views/login.phtml">Already a Member ?</a></center>
+            <center><a href="../views/login.php">Already a Member ?</a></center>
 
             <!-- Text input-->
 
@@ -83,7 +55,7 @@ $registrationAction = getActionUrl('registration');
                 <div class="col-md-4 selectContainer">
                     <div class="input-group date">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                        <input type="text" name="birth_date" class="form-control" placeholder="Date of Birth">
+                        <input type="date" name="birth_date" class="form-control" placeholder="Date of Birth">
                     </div>
                 </div>
             </div>
@@ -173,12 +145,6 @@ $registrationAction = getActionUrl('registration');
                 </div>
             </div>
 
-
-            <!-- Success message -->
-            <div class="alert alert-success" role="alert" id="success_message">Success <i
-                        class="glyphicon glyphicon-thumbs-up"></i> Success!.
-            </div>
-
             <center><span class="red-alert"><i>* Required fields.</i></span></center>
 
             <!-- Button -->
@@ -194,21 +160,9 @@ $registrationAction = getActionUrl('registration');
 
         </fieldset>
     </form>
-</div>
-<footer class="container-fluid text-center footer-custom">
-
-
-    <p>Copyright Besim Saraci</p>
-</footer>
+    </div>
+   </div>
 </div>
 
 
-<script>
-    $('.container .input-group.date').datepicker({
-        autoclose: true,
-        todayHighlight: true
-    });
-</script>
-</body>
-
-</html>
+<?php include 'footer.php'; ?>
