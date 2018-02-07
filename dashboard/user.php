@@ -1,19 +1,24 @@
 <?php
 session_start();
-if(!isset($_SESSION['logged_in'])){
+if (!isset($_SESSION['logged_in'])) {
     header('Location: ../views/login.php');
 }
 include '../src/config.php';
+include '../functions.php';
 $userId = $_SESSION['user_id'];
 $userSql = "SELECT * FROM `perdorues` WHERE perdorues_id = '{$userId}'";
 $user = $conn->query($userSql);
 $user = $user->fetch_assoc();
-$plans = array('Free','Pro','Premium');
+$plans = array('Free', 'Pro', 'Premium');
 
-if(isset($_COOKIE['editim_result'])){
+if (isset($_COOKIE['editim_result'])) {
     $results = json_decode($_COOKIE['editim_result']);
     setcookie('editim_result', '', time() - 3600, '/');
 }
+$totaliFile = formatFileSize(getUserTotalFileSize($userId, $conn));
+$nrKartave = nrKartaveBankare($userId, $conn);
+$nrKontakteve = nrKontakteveTelefonike($userId, $conn);
+$totaliMbetur = formatFileSize(totaliMbetur($userId, $conn));
 
 
 ?>
@@ -138,47 +143,22 @@ if(isset($_COOKIE['editim_result'])){
                         <div class="card">
                             <div class="content">
                                 <div class="row">
-                                    <div class="col-xs-5">
-                                        <div class="icon-big icon-warning text-center">
+                                    <div class="col-xs-4">
+                                        <div class="icon-big icon-danger text-center">
                                             <i class="ti-server"></i>
                                         </div>
                                     </div>
-                                    <div class="col-xs-7">
+                                    <div class="col-xs-8">
                                         <div class="numbers">
-                                            <p>Kapaciteti</p>
-                                            105GB
+                                            <p>Hapësira e Plotësuar</p>
+                                            <?php echo $totaliFile ?>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="footer">
-                                    <hr />
+                                    <hr/>
                                     <div class="stats">
-                                        <i class="ti-reload"></i> Përditëso tani
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="card">
-                            <div class="content">
-                                <div class="row">
-                                    <div class="col-xs-5">
-                                        <div class="icon-big icon-success text-center">
-                                            <i class="ti-wallet"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-7">
-                                        <div class="numbers">
-                                            <p>Të ardhurat</p>
-                                            $1,345
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="footer">
-                                    <hr />
-                                    <div class="stats">
-                                        <i class="ti-calendar"></i> Dita e djeshme
+                                        <i class="ti-reload"></i> Përditësuar
                                     </div>
                                 </div>
                             </div>
@@ -190,20 +170,45 @@ if(isset($_COOKIE['editim_result'])){
                                 <div class="row">
                                     <div class="col-xs-5">
                                         <div class="icon-big icon-danger text-center">
-                                            <i class="ti-pulse"></i>
+                                            <i class="ti-harddrive"></i>
                                         </div>
                                     </div>
                                     <div class="col-xs-7">
                                         <div class="numbers">
-                                            <p>Gabimet</p>
-                                            23
+                                            <p>Hapesira e Mbetur</p>
+                                            <?php echo $totaliMbetur ?>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="footer">
-                                    <hr />
+                                    <hr/>
                                     <div class="stats">
-                                        <i class="ti-timer"></i> Përgjatë orëve të fundit
+                                        <i class="ti-reload"></i> Përditësuar
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="card">
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-xs-5">
+                                        <div class="icon-big icon-danger text-center">
+                                            <i class="ti-user"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <div class="numbers">
+                                            <p>Kontakte Telefonike</p>
+                                            <?php echo $nrKontakteve ?>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <hr/>
+                                    <div class="stats">
+                                        <i class="ti-reload"></i> Përditësuar
                                     </div>
                                 </div>
                             </div>
@@ -236,11 +241,11 @@ if(isset($_COOKIE['editim_result'])){
                     <div class="col-lg-8 col-md-7">
                         <div class="card">
                             <?php
-                            foreach($results as $result) {
+                            foreach ($results as $result) {
                                 ?>
                                 <span style="color: #557eff;"><?php echo $result ?></span><br>
                                 <?php
-                            }?>
+                            } ?>
                             <div class="header">
                                 <h4 class="title">Edito Profilin</h4>
                             </div>
@@ -251,15 +256,16 @@ if(isset($_COOKIE['editim_result'])){
                                             <div class="form-group">
                                                 <label>Username</label>
                                                 <input type="text" name="username" class="form-control border-input"
-                                                       placeholder="Username" value="<?php echo $user['username']?>">
+                                                       placeholder="Username" value="<?php echo $user['username'] ?>">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="email">Email</label>
                                                 <input type="email" name="email" id="email"
-                                                       class="form-control border-input" readonly="readonly" placeholder="Email"
-                                                       value="<?php echo $user['email']?>">
+                                                       class="form-control border-input" readonly="readonly"
+                                                       placeholder="Email"
+                                                       value="<?php echo $user['email'] ?>">
                                             </div>
                                         </div>
                                     </div>
@@ -269,14 +275,15 @@ if(isset($_COOKIE['editim_result'])){
                                             <div class="form-group">
                                                 <label>Emri</label>
                                                 <input type="text" name="emri" class="form-control border-input"
-                                                       placeholder="Emer" value="<?php echo $user['emri']?>" required>
+                                                       placeholder="Emer" value="<?php echo $user['emri'] ?>" required>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label>Last Name</label>
                                                 <input type="text" name="mbiemri" class="form-control border-input"
-                                                       placeholder="Mbiemer" value="<?php echo $user['mbiemri']?>" required>
+                                                       placeholder="Mbiemer" value="<?php echo $user['mbiemri'] ?>"
+                                                       required>
                                             </div>
                                         </div>
                                     </div>
@@ -286,7 +293,8 @@ if(isset($_COOKIE['editim_result'])){
                                             <div class="form-group">
                                                 <label>Ditelindja</label>
                                                 <input type="date" name="ditelindja" class="form-control border-input"
-                                                       placeholder="Datelindja" value="<?php echo $user['datelindja'] ?>" required>
+                                                       placeholder="Datelindja"
+                                                       value="<?php echo $user['datelindja'] ?>" required>
                                             </div>
                                         </div>
                                     </div>
@@ -296,9 +304,17 @@ if(isset($_COOKIE['editim_result'])){
                                             <div class="form-group">
                                                 <label>Plan</label>
                                                 <select name="plan" class="form-control border-input" required>
-                                                    <option <?php echo $user['plan_id'] == 1? "selected='selected'": ''?>value="1">Free</option>
-                                                    <option <?php echo $user['plan_id'] == 2? "selected='selected'": ''?> value="2">Premium</option>
-                                                    <option <?php echo $user['plan_id'] == 3? "selected='selected'": ''?>value="3">Pro</option>
+                                                    <option
+                                                        <?php echo $user['plan_id'] == 1 ? "selected='selected'" : '' ?>value="1">
+                                                        Free
+                                                    </option>
+                                                    <option <?php echo $user['plan_id'] == 2 ? "selected='selected'" : '' ?>
+                                                            value="2">Premium
+                                                    </option>
+                                                    <option
+                                                        <?php echo $user['plan_id'] == 3 ? "selected='selected'" : '' ?>value="3">
+                                                        Pro
+                                                    </option>
                                                 </select>
                                             </div>
                                         </div>
@@ -306,19 +322,21 @@ if(isset($_COOKIE['editim_result'])){
                                             <div class="form-group">
                                                 <label>Nr Telefoni</label>
                                                 <input type="text" name="nr_tel" class="form-control border-input"
-                                                       placeholder="Nr Telefoni" value="<?php echo $user['telefon']?>" required>
+                                                       placeholder="Nr Telefoni" value="<?php echo $user['telefon'] ?>"
+                                                       required>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label>Passwordi Aktual</label>
                                                 <input type="password" name="password" class="form-control border-input"
-                                                       placeholder="*******"  required>
+                                                       placeholder="*******" required>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="text-center">
-                                        <button type="submit" name="submit" class="btn btn-info btn-fill btn-wd">Edito Profilin
+                                        <button type="submit" name="submit" class="btn btn-info btn-fill btn-wd">Edito
+                                            Profilin
                                         </button>
                                     </div>
                                     <div class="clearfix"></div>
@@ -336,7 +354,9 @@ if(isset($_COOKIE['editim_result'])){
         <footer class="footer">
             <div class="container-fluid">
                 <div class="copyright pull-right">
-                    &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by <a href="#">Keep It Safe</a>
+                    &copy;
+                    <script>document.write(new Date().getFullYear())</script>
+                    , made with <i class="fa fa-heart heart"></i> by <a href="#">Keep It Safe</a>
                 </div>
             </div>
         </footer>

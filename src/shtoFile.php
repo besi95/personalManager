@@ -1,5 +1,6 @@
 <?php
 include 'config.php';
+include '../functions.php';
 session_start();
 $emerFile = $path = $kategoriId = $fileExtension = $perdoruesId = "";
 $emerFile = $_POST['emertimi'];
@@ -8,6 +9,13 @@ $kategoriId = $_POST['kategoria'];
 
 $fileExtension = '.'.strtolower(pathinfo($path, PATHINFO_EXTENSION));;
 $perdoruesId = $_SESSION['user_id'];
+
+$hapesiraMbetur = totaliMbetur($perdoruesId,$conn);
+if($_FILES['file']['size'] > $hapesiraMbetur){
+    $errors[] = "Madhesia e filet e tejkalon limitin e mbetur prej ".formatFileSize($hapesiraMbetur).".";
+    setcookie('shtim_status', json_encode($errors), time() + 3600, '/');
+    header('Location: ../dashboard/dokumente.php');
+}
 
 $errors = array();
 

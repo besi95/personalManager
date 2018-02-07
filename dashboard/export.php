@@ -118,7 +118,7 @@ $userId = $_SESSION['user_id'];
                     <ul class="nav navbar-nav navbar-right">
 
                         <li>
-                            <a href="#">
+                            <a href="../src/logout.php">
                                 <i class="ti-user"></i>
                                 <p>Logout</p>
                             </a>

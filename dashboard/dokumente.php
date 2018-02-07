@@ -1,15 +1,16 @@
 <?php
 session_start();
 
-if(!isset($_SESSION['logged_in'])){
+if (!isset($_SESSION['logged_in'])) {
     header('Location: ../views/login.php');
 }
-if(isset($_COOKIE['shtim_status'])){
+if (isset($_COOKIE['shtim_status'])) {
     $results = json_decode($_COOKIE['shtim_status']);
     setcookie('shtim_status', '', time() - 3600, '/');
 }
 
 include '../src/config.php';
+include "../functions.php";
 
 $userId = $_SESSION['user_id'];
 $fileSql = "SELECT * FROM `file` WHERE file.perdorues_id = '{$userId}'";
@@ -18,42 +19,15 @@ $files = $conn->query($fileSql);
 $categorySql = "SELECT * FROM kategori_file";
 $categories = $conn->query($categorySql);
 
-function formatSizeUnits($bytes)
+
+function getFileCategory($categoryId, $conn)
 {
-    if ($bytes >= 1073741824)
-    {
-        $bytes = number_format($bytes / 1073741824, 2) . ' GB';
-    }
-    elseif ($bytes >= 1048576)
-    {
-        $bytes = number_format($bytes / 1048576, 2) . ' MB';
-    }
-    elseif ($bytes >= 1024)
-    {
-        $bytes = number_format($bytes / 1024, 2) . ' KB';
-    }
-    elseif ($bytes > 1)
-    {
-        $bytes = $bytes . ' Bytes';
-    }
-    elseif ($bytes == 1)
-    {
-        $bytes = $bytes . ' Byte';
-    }
-    else
-    {
-        $bytes = '0 Bytes';
-    }
-
-    return $bytes;
-}
-
-function getFileCategory($categoryId,$conn){
     $categorySql = "SELECT * FROM `kategori_file` WHERE kategori_id  = '{$categoryId}'";
     $files = $conn->query($categorySql);
     $category = $files->fetch_assoc();
     return $category['emri'];
 }
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -153,7 +127,7 @@ function getFileCategory($categoryId,$conn){
 
 <div class="wrapper">
     <div class="sidebar" data-background-color="black" data-active-color="danger">
-<div class="sidebar-wrapper">
+        <div class="sidebar-wrapper">
             <div class="logo">
                 <a href="#" class="simple-text">
                     Keep it Safe
@@ -217,7 +191,7 @@ function getFileCategory($categoryId,$conn){
                     <ul class="nav navbar-nav navbar-right">
 
                         <li>
-                            <a href="#">
+                            <a href="../src/logout.php">
                                 <i class="ti-user"></i>
                                 <p>Logout</p>
                             </a>
@@ -235,13 +209,13 @@ function getFileCategory($categoryId,$conn){
                     <div class="col-md-12">
                         <div class="card">
                             <?php
-                            foreach($results as $result) {
+                            foreach ($results as $result) {
                                 ?>
-                            <div class="alert alert-warning">
-                                <span><?php echo $result ?></span>
-                            </div><br>
+                                <div class="alert alert-warning">
+                                    <span><?php echo $result ?></span>
+                                </div><br>
                                 <?php
-                            }?>
+                            } ?>
                             <div class="header">
                                 <h4 class="title">Dokumenta</h4>
                                 <p class="category">Lista e Dokumentave Tuaja</p>
@@ -257,18 +231,19 @@ function getFileCategory($categoryId,$conn){
                                     <th>Veprimi</th>
                                     </thead>
                                     <tbody>
-                                    <?php while($file=$files->fetch_assoc()){?>
-                                    <tr>
-                                        <td><?php echo $file['file_id']?></td>
-                                        <td><?php echo $file['file_emer']?></td>
-                                        <td><?php echo formatSizeUnits(filesize('../dokumenta/'.$file['path'])) ?></td>
-                                        <td><?php echo getFileCategory($file['kategori_id'],$conn)?></td>
-                                        <td><?php echo strtoupper($file['file_extension'])?></td>
-                                        <td><a href="<?php echo '../dokumenta/'.$file['path']?>">Shiko</a> |
-                                            <a href="<?php echo '../src/fshiFile.php?fileId='.$file['file_id'].'&fileName='.$file['path']?>">Fshi</a> |
-                                            <a href="<?php echo '../src/shikoFile.php?fileName='.$file['path'].'&fileExt='.$file['file_extension']?>">Shkarko</a>
-                                        </td>
-                                    </tr>
+                                    <?php while ($file = $files->fetch_assoc()) { ?>
+                                        <tr>
+                                            <td><?php echo $file['file_id'] ?></td>
+                                            <td><?php echo $file['file_emer'] ?></td>
+                                            <td><?php echo formatFileSize(filesize('../dokumenta/' . $file['path'])) ?></td>
+                                            <td><?php echo getFileCategory($file['kategori_id'], $conn) ?></td>
+                                            <td><?php echo strtoupper($file['file_extension']) ?></td>
+                                            <td><a href="<?php echo '../dokumenta/' . $file['path'] ?>">Shiko</a> |
+                                                <a href="<?php echo '../src/fshiFile.php?fileId=' . $file['file_id'] . '&fileName=' . $file['path'] ?>">Fshi</a>
+                                                |
+                                                <a href="<?php echo '../src/shikoFile.php?fileName=' . $file['path'] . '&fileExt=' . $file['file_extension'] ?>">Shkarko</a>
+                                            </td>
+                                        </tr>
                                     <?php } ?>
                                     </tbody>
                                 </table>
@@ -276,7 +251,8 @@ function getFileCategory($categoryId,$conn){
                             </div>
                         </div>
                         <div class="text-center">
-                            <button id="shfaqForm" style="background-color: #cc4836; border: none" class="btn btn-info btn-fill btn-wd">Shto Dokument
+                            <button id="shfaqForm" style="background-color: #cc4836; border: none"
+                                    class="btn btn-info btn-fill btn-wd">Shto Dokument
                             </button>
 
                         </div>
@@ -289,7 +265,8 @@ function getFileCategory($categoryId,$conn){
                                         <div class="file-upload-container">
                                             <div class="file-upload-override-button left">
                                                 Upload Dokumentin
-                                                <input type="file" name="file" class="file-upload-button" id="file-upload-button"required>
+                                                <input type="file" name="file" class="file-upload-button"
+                                                       id="file-upload-button" required>
                                             </div>
                                             <div class="file-upload-filename left" id="file-upload-filename">Ju nuk keni
                                                 zgjedhur asnje file
@@ -298,12 +275,12 @@ function getFileCategory($categoryId,$conn){
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                            <label>Kategoria</label>
-                                            <select name="kategoria" class="form-control border-input" required>
-                                                <?php while($category = $categories->fetch_assoc()){?>
-                                                <option value="<?php echo $category['kategori_id']?>"><?php echo $category['emri']?></option>
-                                                <?php }?>
-                                            </select>
+                                        <label>Kategoria</label>
+                                        <select name="kategoria" class="form-control border-input" required>
+                                            <?php while ($category = $categories->fetch_assoc()) { ?>
+                                                <option value="<?php echo $category['kategori_id'] ?>"><?php echo $category['emri'] ?></option>
+                                            <?php } ?>
+                                        </select>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group input-forma ">
@@ -314,7 +291,8 @@ function getFileCategory($categoryId,$conn){
                                 </div>
                                 <br><br>
                                 <div class="text-center">
-                                    <button type="submit" name="submit" class="btn btn-info btn-fill btn-wd">Shto Dokument
+                                    <button type="submit" name="submit" class="btn btn-info btn-fill btn-wd">Shto
+                                        Dokument
                                     </button>
 
                                 </div>
@@ -327,7 +305,9 @@ function getFileCategory($categoryId,$conn){
         <footer class="footer">
             <div class="container-fluid">
                 <div class="copyright pull-right">
-                    &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by <a href="#">Keep It Safe</a>
+                    &copy;
+                    <script>document.write(new Date().getFullYear())</script>
+                    , made with <i class="fa fa-heart heart"></i> by <a href="#">Keep It Safe</a>
                 </div>
             </div>
         </footer>
@@ -366,8 +346,8 @@ function getFileCategory($categoryId,$conn){
         $("#file-upload-filename").html(fileName);
     });
 
-    jQuery(document).ready(function(){
-        jQuery('#shfaqForm').on('click', function(event) {
+    jQuery(document).ready(function () {
+        jQuery('#shfaqForm').on('click', function (event) {
             jQuery('.shto-dokument').toggle('show');
         });
     });

@@ -112,19 +112,13 @@ include '../src/config.php';
 		<nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar bar1"></span>
-                        <span class="icon-bar bar2"></span>
-                        <span class="icon-bar bar3"></span>
-                    </button>
                     <a class="navbar-brand" href="#">Lista e Emaileve</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
 
                         <li>
-                            <a href="#">
+                            <a href="../src/logout.php">
                                 <i class="ti-user"></i>
                                 <p>Logout</p>
                             </a>
@@ -169,8 +163,7 @@ include '../src/config.php';
                                             <td><?php echo $email['pasuordi'];  ?></td>
                                             <td><?php echo $email['tipi_email'] ==1 ? 'Personal' : 'Jo - Personal';  ?></td>
                                             <td><a href="<?php echo '../src/fshi_email.php?emailId='. $email['email_id']; ?>">
-                                                    Fshi</a> |
-                                                <a href="#">Edito</a></td>
+                                                    Fshi</a></td>
                                         </tr>
                                     <?php } ?>
                                     </tbody>

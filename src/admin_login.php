@@ -17,13 +17,14 @@ if ($isAuthenticated == 1) {
 
     session_start();
     $_SESSION['admin_logged_in'] = 1;
+    $_SESSION['admin_id'] = $row['admin_id'];
     $_SESSION['admin_username'] = $row['username'];
     header('location: ../admin/index.php');
 
 } else {
 
     $error = "Invalid Credentials!";
-    header('location: ../views/admin_login.phtml');
+    header('location: ../views/admin_login.php');
 }
 
 function authenticateAdmin($username, $password, $privateToken, $conn)

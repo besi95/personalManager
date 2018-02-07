@@ -1,6 +1,9 @@
 <?php
 session_start();
-$userId = $_SESSION['user_id'];
+
+if(!isset($_SESSION['admin_logged_in'])){
+    header('Location: ../views/admin_login.php');
+}
 include '../src/config.php';
 ?>
 <!doctype html>
@@ -11,7 +14,7 @@ include '../src/config.php';
 	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>Dashboard</title>
+	<title>Admin Dashboard</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -39,12 +42,6 @@ include '../src/config.php';
 
 <div class="wrapper">
 	<div class="sidebar" data-background-color="black" data-active-color="danger">
-
-    <!--
-		Tip 1: you can change the color of the sidebar's background using: data-background-color="white | black"
-		Tip 2: you can change the color of the active button using the data-active-color="primary | info | success | warning | danger"
-	-->
-
     	<div class="sidebar-wrapper">
             <div class="logo">
                 <a href="dashboard.php" class="simple-text">
@@ -56,49 +53,19 @@ include '../src/config.php';
                 <li>
                     <a href="dashboard.php">
                         <i class="ti-panel"></i>
-                        <p>Dashboard</p>
+                        <p>Raporte</p>
                     </a>
                 </li>
                 <li>
                     <a href="user.php">
                         <i class="ti-user"></i>
-                        <p>Profili i Përdoruesit</p>
+                        <p>Përdoruesit</p>
                     </a>
                 </li>
                 <li>
                     <a href="dokumente.php">
                         <i class="ti-view-list-alt"></i>
                         <p>Dokumente</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="karta.php">
-                        <i class="ti-credit-card"></i>
-                        <p>Karta Bankare</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="kontakte_telefonike.php">
-                        <i class="ti-mobile"></i>
-                        <p>Kontakte Telefonike</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="shenime.php">
-                        <i class="ti-book"></i>
-                        <p>Shënime</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="email.php">
-                        <i class="ti-email"></i>
-                        <p>Email</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="export.php">
-                        <i class="ti-export"></i>
-                        <p>Export</p>
                     </a>
                 </li>
                 <li class="active">
@@ -114,12 +81,6 @@ include '../src/config.php';
 		<nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar bar1"></span>
-                        <span class="icon-bar bar2"></span>
-                        <span class="icon-bar bar3"></span>
-                    </button>
                     <a class="navbar-brand" href="#">Njoftime</a>
                 </div>
                 <div class="collapse navbar-collapse">

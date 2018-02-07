@@ -38,6 +38,7 @@ session_start();
             <?php if(!isset($_SESSION['logged_in'])){?>
             <li><a href="login.php">LOGIN</a></li>
             <?php }else {?>
+                <li><a href="../dashboard/index.php">DASHBOARD</a></li>
                 <li><a href="../src/logout.php">LOGOUT</a></li>
             <?php  } ?>
         </ul>
