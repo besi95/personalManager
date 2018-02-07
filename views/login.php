@@ -53,7 +53,7 @@ if(isset($_COOKIE['registration_status'])) {
 
             <!-- Form Name -->
             <legend><center><h2><b>Login</b></h2></center></legend><br>
-            <center><a href="../views/registration.php">Not a Member ?</a></center>
+            <center><a href="../views/registration.php">Nuk keni nje llogari ?</a></center>
 
 
             <!-- Text input-->

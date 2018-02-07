@@ -18,6 +18,6 @@ if (isset($_POST['submit'])) {
 
 
     $result = $conn->query($kontaktSql);
-    header('Location: ../Admin/kontakte_telefonike.php');
+    header('Location: ../dashboard/kontakte_telefonike.php');
 
 }

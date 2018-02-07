@@ -17,6 +17,6 @@ if (isset($_POST['submit'])) {
 
 
     $result = $conn->query($shenimSql);
-    header('Location: ../Admin/shenime.php');
+    header('Location: ../dashboard/shenime.php');
 
 }

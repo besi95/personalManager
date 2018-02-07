@@ -22,16 +22,16 @@ if ($result) {
     if ($uploadStatus == false) {
         $errors[] = "File nuk mund te uploadohet.";
         setcookie('shtim_status', json_encode($errors), time() + 3600, '/');
-        header('Location: ../Admin/dokumente.php');
+        header('Location: ../dashboard/dokumente.php');
     }else {
         $errors[] = "Shtimi u krye me sukses!";
         setcookie('shtim_status', json_encode($errors), time() + 3600, '/');
-        header('Location: ../Admin/dokumente.php');
+        header('Location: ../dashboard/dokumente.php');
     }
 } else {
     $errors[] = "Shtimi i filet nuk mund te kryhet. Provoni perseri.";
     setcookie('shtim_status', json_encode($errors), time() + 3600, '/');
-    header('Location: ../Admin/dokumente.php');
+    header('Location: ../dashboard/dokumente.php');
 
 }
 

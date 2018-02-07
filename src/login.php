@@ -27,19 +27,19 @@ if ($count == 1 && $row['is_activated'] == 1) {
     $_SESSION['logged_in'] = 1;
     $_SESSION['username'] = $row['username'];
     $_SESSION['user_id'] = $row['perdorues_id'];
-    header('location:http://localhost/paw/personalManager/Admin/dashboard.php');
+    header('Location: ../dashboard/index.php');
 
 } elseif ($row['is_activated'] != 1) {
 
     $errors[] = "Llogaria juaj nuk eshte e aprovuar!";
     setcookie('login_status', json_encode($errors), time() + 3600, '/');
 
-    header('location:http://localhost/paw/personalManager/views/login.php');
+    header('location: ../views/login.php');
 } else {
 
     $errors[] = "Kredencialet jane te gabuara!";
     setcookie('login_status', json_encode($errors), time() + 3600, '/');
-    header('location:http://localhost/paw/personalManager/views/login.php');
+    header('location: ../views/login.php');
 }
 
 ?>

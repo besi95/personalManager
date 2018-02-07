@@ -21,6 +21,6 @@ if (isset($_POST['submit'])) {
 
 
     $result = $conn->query($kartaSql);
-    header('Location: ../Admin/karta.php');
+    header('Location: ../dashboard/karta.php');
 
 }

@@ -24,7 +24,7 @@ include ('header.php');
             <legend>
                 <center><h2><b>Become a Member</b></h2></center>
             </legend>
-            <center><a href="../views/login.php">Already a Member ?</a></center>
+            <center><a href="../views/login.php">Keni nje llogari ?</a></center>
 
             <!-- Text input-->
 
