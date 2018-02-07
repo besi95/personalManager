@@ -1,7 +1,4 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
 include("config.php");
 include "../functions.php";
 $baseUrl = getBaseUrl();
@@ -17,16 +14,16 @@ $isAuthenticated = $authenticate['authenticated'];
 
 if ($isAuthenticated == 1) {
     $row = $authenticate['row'];
-die('u logua');
+
     session_start();
     $_SESSION['admin_logged_in'] = 1;
     $_SESSION['admin_username'] = $row['username'];
-    header('location:http://localhost/paw/personalManager/views/admin_dashboard.phtml');
+    header('location: ../admin/index.php');
 
 } else {
-    die('nuk u logua');
+
     $error = "Invalid Credentials!";
-    header('location:http://localhost/paw/personalManager/views/admin_login.phtml');
+    header('location: ../views/admin_login.phtml');
 }
 
 function authenticateAdmin($username, $password, $privateToken, $conn)

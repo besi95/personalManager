@@ -6,4 +6,4 @@ $fileName = $_GET['fileName'];
 $fshiSql = "DELETE FROM `file` WHERE file.file_id = '{$fileId}'";
 $result = $conn->query($fshiSql);
 unlink('../dokumenta/'.$fileName);
-header('Location: ../Admin/dokumente.php');
+header('Location: ../dashboard/dokumente.php');

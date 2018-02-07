@@ -15,6 +15,6 @@ if (isset($_POST['submit'])) {
                 VALUES ('{$userId}', '{$email}', '{$fjalekalimi}', '{$tipi}','{$emri}');";
 
     $result = $conn->query($emailSql);
-    header('Location: ../Admin/email.php');
+    header('Location: ../dashboard/email.php');
 
 }

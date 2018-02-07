@@ -26,17 +26,15 @@ if (isset($_POST['submit'])) {
                     pasuord = '{$password}'
                     WHERE email='{$email}'";
         $result = $conn->query($editSql);
-//        var_dump($editSql);
-//        var_dump($result);
-//        die();
+
 
     if ($result) {
         $errors[] = "Perdoruesi u editua me sukses!";
         setcookie('editim_result', json_encode($errors), time() + 3600, '/');
-        header('Location: ../Admin/user.php');
+        header('Location: ../dashboard/user.php');
     } else {
         $errors[] = "Editimi nuk mund te kryhet!";
         setcookie('editim_result', json_encode($errors), time() + 3600, '/');
-        header('Location: ../Admin/user.php');
+        header('Location: ../dashboard/user.php');
     }
 }
