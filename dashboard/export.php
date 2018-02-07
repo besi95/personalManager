@@ -10,8 +10,7 @@ $userId = $_SESSION['user_id'];
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/locked-padlock-with-chain.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
     <title>Dashboard</title>
@@ -36,18 +35,6 @@ $userId = $_SESSION['user_id'];
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/themify-icons.css" rel="stylesheet">
-    <style>
-        .input-forma{
-            margin-left: 15%;
-        }
-        .cart-form{
-            margin-left: 18%;
-
-        }
-        .shto-email{
-            display: none;
-        }
-    </style>
 
 </head>
 <body>
@@ -137,7 +124,7 @@ $userId = $_SESSION['user_id'];
                         <div class="card">
                             <div class="header">
                                 <h4 class="title">Export</h4>
-                                <p class="category">EKsporto ne format XML kontaktet e ruajtura.</p>
+                                <p class="category">Eksporto ne format XML kontaktet e ruajtura.</p>
                             </div>
 
                         <div style="padding-bottom: 50px;" class="row">

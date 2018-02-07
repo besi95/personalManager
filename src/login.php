@@ -33,7 +33,6 @@ if ($count == 1 && $row['is_activated'] == 1) {
 
     $errors[] = "Llogaria juaj nuk eshte e aprovuar!";
     setcookie('login_status', json_encode($errors), time() + 3600, '/');
-
     header('location: ../views/login.php');
 } else {
 

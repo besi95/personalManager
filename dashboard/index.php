@@ -1,5 +1,5 @@
 <?php
 /**
- * entry point for admin dashboard
+ * entry point for user dashboard
  */
 header('Location: user.php');

@@ -64,6 +64,11 @@ function getUserTotalFileSize($userId, $conn)
 
 }
 
+/**
+ * @param $userId
+ * @param $conn
+ * @return intgjej nr e kartave bankare te ruajtura nga useri
+ */
 function nrKartaveBankare($userId, $conn)
 {
     $kartaSql = "SELECT COUNT(karta_bankare.karta_id) as nr_kartave 
@@ -99,12 +104,18 @@ function nrKontakteveTelefonike($userId, $conn)
     }
 }
 
+/**
+ * @param $userId
+ * @param $conn
+ * @return int
+ * gjej totalin e mbetur te hapesires se perdoruesit
+ */
 function totaliMbetur($userId, $conn)
 {
     $planet = array(
-        'free'=>5368709120,
-        'pro' =>10737418240,
-        'premium'=>21474836480
+        'free' => 5368709120,
+        'pro' => 10737418240,
+        'premium' => 21474836480
     );
     $planSql = "SELECT plan.code FROM perdorues
                 INNER JOIN plan ON perdorues.plan_id = plan.plan_id
@@ -113,12 +124,19 @@ function totaliMbetur($userId, $conn)
     $planiAktual = $plani->fetch_assoc();
     $planiAktual = $planiAktual['code'];
     $madhesiaPlanit = $planet[$planiAktual];
-    $totaliZene = getUserTotalFileSize($userId,$conn);
+    $totaliZene = getUserTotalFileSize($userId, $conn);
     $totaliMbetur = intval($madhesiaPlanit - $totaliZene);
     return $totaliMbetur;
 }
 
-function getUserPlan($userId,$conn){
+/**
+ * @param $userId
+ * @param $conn
+ * @return mixed
+ * gjej kodin e planit te perdoruesit
+ */
+function getUserPlan($userId, $conn)
+{
 
     $planSql = "SELECT plan.code FROM perdorues
                 INNER JOIN plan ON perdorues.plan_id = plan.plan_id

@@ -21,8 +21,7 @@ $users = $conn->query($userSql);
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/locked-padlock-with-chain">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
     <title>Admin Dashboard</title>
