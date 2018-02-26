@@ -3,30 +3,43 @@ include("config.php");
 include "../functions.php";
 $baseUrl = getBaseUrl();
 
-$error = '';
+$errors = array();
+/**
+ * clean up queries per te bere prevent sql injection
+ */
 $email = mysqli_real_escape_string($conn, $_POST['email']);
 $password = md5(mysqli_real_escape_string($conn, $_POST['user_password']));
 
 
-$sql = "SELECT * FROM user WHERE email = '$email' and password = '$password'";
-$result = mysqli_query($conn, $sql);
-$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+$sql = "SELECT * FROM perdorues WHERE email = '$email' and pasuord = '$password'";
+$result = $conn->query($sql);
 
-$count = mysqli_num_rows($result);
+$count = $result->num_rows;
+if($count == 1){
+    $row = $result->fetch_assoc();
+}else{
+    $row['is_activated'] = 1;
+}
 
+if ($count == 1 && $row['is_activated'] == 1) {
 
-if ($count == 1 && $row['active'] == 1) {
     session_start();
     $_SESSION['logged_in'] = 1;
     $_SESSION['username'] = $row['username'];
-    header('location:http://localhost/paw/personalManager');
+    $_SESSION['user_id'] = $row['perdorues_id'];
+    header('Location: ../dashboard/index.php');
 
-} elseif ($row['active'] != 1) {
-    $error = "Your Account is not activated yet!";
-    header('location:http://localhost/paw/personalManager/views/login.phtml');
+} elseif ($row['is_activated'] != 1) {
+
+    $errors[] = "Llogaria juaj nuk eshte e aprovuar!";
+    setcookie('login_status', json_encode($errors), time() + 3600, '/');
+
+    header('location: ../views/login.php');
 } else {
-    $error = "Invalid Credentials!";
-    header('location:http://localhost/paw/personalManager/views/login.phtml');
+
+    $errors[] = "Kredencialet jane te gabuara!";
+    setcookie('login_status', json_encode($errors), time() + 3600, '/');
+    header('location: ../views/login.php');
 }
 
 ?>

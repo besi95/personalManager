@@ -1,37 +1,59 @@
 <?php
 include ('../functions.php');
 $loginAction = getActionUrl('login');
-echo '<h1>'.$error.'</h1>';
+include ('header.php');
+$errors = array();
+if(isset($_COOKIE['login_status'])) {
+    $errors = json_decode($_COOKIE['login_status']);
+    setcookie('login_status', '', time() - 3600, '/');
+}
+$registrationErrors = array();
+if(isset($_COOKIE['registration_status'])) {
+    $errors = json_decode($_COOKIE['registration_status']);
+    setcookie('registration_status', '', time() - 3600, '/');
+}
+
 ?>
-<!DOCTYPE html>
-<html lang="en" >
+    <head>
+        <script src="../bootstrap/modernizr.min.js" type="text/javascript"></script>
+        <link rel='stylesheet prefetch'
+              href='../bootstrap/bootstrap-validator/css/bootstrapValidator.min.css'>
+        <script src='../bootstrap/js/jquery.min.js'></script>
+        <script src='../bootstrap/bootstrap-validator/js/bootstrapvalidator.min.js'></script>
+        <script src="../skin/js/login_validation.js"></script>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-    <script src="http://localhost/paw/personalManager/bootstrap/modernizr.min.js" type="text/javascript"></script>
-    <link rel='stylesheet prefetch' href='http://localhost/paw/personalManager/bootstrap/bootstrap-3.2.0/dist/css/bootstrap.min.css'>
-    <link rel='stylesheet prefetch' href='http://localhost/paw/personalManager/bootstrap/bootstrap-3.2.0/dist/css/bootstrap-theme.min.css'>
-    <link rel='stylesheet prefetch' href='http://localhost/paw/personalManager/bootstrap/bootstrap-validator/css/bootstrapValidator.min.css'>
-    <link rel="stylesheet" href="http://localhost/paw/personalManager/skin/css/style.css">
-    <script src='http://localhost/paw/personalManager/bootstrap/js/jquery.min.js'></script>
-    <script src='http://localhost/paw/personalManager/bootstrap/bootstrap-3.2.0/dist/js/bootstrap.min.js'></script>
-    <script src='http://localhost/paw/personalManager/bootstrap/bootstrap-validator/js/bootstrapvalidator.min.js'></script>
-    <script  src="http://localhost/paw/personalManager/skin/js/login_validation.js"></script>
+<div class="login-container login-page">
+    <div class="container">
+        <div class="row">
+            <?php
+            if (count($errors) > 0) {
 
+                foreach ($errors as $error) {
+                    ?>
+                    <div class="alert alert-danger">
+                        <span ><?php echo $error ?></span><br>
+                    </div>
+                    <?php
+                }
+            } ?>
+            <?php
+            if (count($registrationErrors) > 0) {
 
-</head>
-
-<body>
-
-<div class="container">
-
-    <form class="well form-horizontal" action="<?php echo $loginAction?>" method="post"  id="login_form">
+                foreach ($registrationErrors as $regError) {
+                    ?>
+                    <div class="alert alert-danger">
+                        <span ><?php echo $regError ?></span><br>
+                    </div>
+                    <?php
+                }
+            } ?>
+            <form  class="well form-horizontal" action="<?php echo $loginAction?>" method="post"  id="login_form">
         <fieldset>
 
             <!-- Form Name -->
             <legend><center><h2><b>Login</b></h2></center></legend><br>
-            <center><a href="http://localhost/paw/personalManager/views/registration.phtml">Not a Member ?</a></center>
+            <center><a href="../views/registration.php">Nuk keni nje llogari ?</a></center>
 
 
             <!-- Text input-->
@@ -72,12 +94,8 @@ echo '<h1>'.$error.'</h1>';
 
         </fieldset>
     </form>
+        </div>
+    </div>
 </div>
-</div>
 
-
-
-
-</body>
-
-</html>
+<?php include 'footer.php';?>
