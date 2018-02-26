@@ -2,41 +2,619 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3918d104-c24e-4e4f-9c27-afe8d2c14a32" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/views/footer.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/views/header.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/views/test" />
-      <change beforePath="$PROJECT_DIR$/Admin/assets/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/Admin/assets/css/bootstrap.min.css" />
-      <change beforePath="$PROJECT_DIR$/Admin/assets/css/themify-icons.css" afterPath="$PROJECT_DIR$/Admin/assets/css/themify-icons.css" />
-      <change beforePath="$PROJECT_DIR$/Admin/assets/fonts/themify.eot" afterPath="$PROJECT_DIR$/Admin/assets/fonts/themify.eot" />
-      <change beforePath="$PROJECT_DIR$/Admin/assets/fonts/themify.svg" afterPath="$PROJECT_DIR$/Admin/assets/fonts/themify.svg" />
-      <change beforePath="$PROJECT_DIR$/Admin/assets/fonts/themify.ttf" afterPath="$PROJECT_DIR$/Admin/assets/fonts/themify.ttf" />
-      <change beforePath="$PROJECT_DIR$/Admin/assets/fonts/themify.woff" afterPath="$PROJECT_DIR$/Admin/assets/fonts/themify.woff" />
-      <change beforePath="$PROJECT_DIR$/Admin/assets/img/apple-icon.png" afterPath="$PROJECT_DIR$/Admin/assets/img/apple-icon.png" />
-      <change beforePath="$PROJECT_DIR$/Admin/assets/img/favicon.png" afterPath="$PROJECT_DIR$/Admin/assets/img/favicon.png" />
-      <change beforePath="$PROJECT_DIR$/Admin/assets/js/bootstrap-notify.js" afterPath="$PROJECT_DIR$/Admin/assets/js/bootstrap-notify.js" />
-      <change beforePath="$PROJECT_DIR$/Admin/assets/js/chartist.min.js" afterPath="$PROJECT_DIR$/Admin/assets/js/chartist.min.js" />
-      <change beforePath="$PROJECT_DIR$/Admin/assets/js/demo.js" afterPath="$PROJECT_DIR$/Admin/assets/js/demo.js" />
-      <change beforePath="$PROJECT_DIR$/Admin/assets/sass/paper-dashboard.scss" afterPath="$PROJECT_DIR$/Admin/assets/sass/paper-dashboard.scss" />
-      <change beforePath="$PROJECT_DIR$/Admin/assets/sass/paper/_buttons.scss" afterPath="$PROJECT_DIR$/Admin/assets/sass/paper/_buttons.scss" />
-      <change beforePath="$PROJECT_DIR$/Admin/assets/sass/paper/_inputs.scss" afterPath="$PROJECT_DIR$/Admin/assets/sass/paper/_inputs.scss" />
-      <change beforePath="$PROJECT_DIR$/Admin/assets/sass/paper/_misc.scss" afterPath="$PROJECT_DIR$/Admin/assets/sass/paper/_misc.scss" />
-      <change beforePath="$PROJECT_DIR$/Admin/assets/sass/paper/_sidebar-and-main-panel.scss" afterPath="$PROJECT_DIR$/Admin/assets/sass/paper/_sidebar-and-main-panel.scss" />
-      <change beforePath="$PROJECT_DIR$/Admin/dashboard.html" afterPath="$PROJECT_DIR$/Admin/dashboard.html" />
-      <change beforePath="$PROJECT_DIR$/Admin/notifications.html" afterPath="$PROJECT_DIR$/Admin/notifications.html" />
-      <change beforePath="$PROJECT_DIR$/Admin/upgrade.html" afterPath="$PROJECT_DIR$/Admin/upgrade.html" />
-      <change beforePath="$PROJECT_DIR$/Admin/user.html" afterPath="$PROJECT_DIR$/Admin/user.html" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/test-infra/s3_cache.py" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/test-infra/s3_cache.py" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/test-infra/uncached-npm-install.sh" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/test-infra/uncached-npm-install.sh" />
-      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change beforePath="$PROJECT_DIR$/skin/css/style.css" afterPath="$PROJECT_DIR$/skin/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/src/login.php" afterPath="$PROJECT_DIR$/src/login.php" />
-      <change beforePath="$PROJECT_DIR$/views/admin_dashboard.phtml" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/views/eugerta.phtml" afterPath="$PROJECT_DIR$/views/eugerta.phtml" />
-      <change beforePath="$PROJECT_DIR$/views/footer.phtml" afterPath="$PROJECT_DIR$/skin/js/custom_scripts.js" />
-      <change beforePath="$PROJECT_DIR$/views/homepage.phtml" afterPath="$PROJECT_DIR$/views/homepage.php" />
-      <change beforePath="$PROJECT_DIR$/views/login.phtml" afterPath="$PROJECT_DIR$/views/login.php" />
-      <change beforePath="$PROJECT_DIR$/views/registration.phtml" afterPath="$PROJECT_DIR$/views/registration.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dokumenta/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/viewFile.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dokumenta/test.pdf" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin.tar.gz" afterPath="$PROJECT_DIR$/admin.tar.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/fonts/themify.eot" afterPath="$PROJECT_DIR$/admin/assets/fonts/themify.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/fonts/themify.ttf" afterPath="$PROJECT_DIR$/admin/assets/fonts/themify.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/fonts/themify.woff" afterPath="$PROJECT_DIR$/admin/assets/fonts/themify.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/img/apple-icon.png" afterPath="$PROJECT_DIR$/admin/assets/img/apple-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/img/background.jpg" afterPath="$PROJECT_DIR$/admin/assets/img/background.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/img/faces/face-0.jpg" afterPath="$PROJECT_DIR$/admin/assets/img/faces/face-0.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/img/faces/face-1.jpg" afterPath="$PROJECT_DIR$/admin/assets/img/faces/face-1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/img/faces/face-2.jpg" afterPath="$PROJECT_DIR$/admin/assets/img/faces/face-2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/img/faces/face-3.jpg" afterPath="$PROJECT_DIR$/admin/assets/img/faces/face-3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/img/favicon.png" afterPath="$PROJECT_DIR$/admin/assets/img/favicon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/img/locked-padlock-with-chain.png" afterPath="$PROJECT_DIR$/admin/assets/img/locked-padlock-with-chain.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/img/new_logo.png" afterPath="$PROJECT_DIR$/admin/assets/img/new_logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/img/tables/locked-padlock-with-chain.png" afterPath="$PROJECT_DIR$/admin/assets/img/tables/locked-padlock-with-chain.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/img/tim_80x80.png" afterPath="$PROJECT_DIR$/admin/assets/img/tim_80x80.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/dist/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/dist/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/dist/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/dist/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/dist/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/dist/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/apple-touch-icon-precomposed.png" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/apple-touch-icon-precomposed.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/flash/ZeroClipboard.swf" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/flash/ZeroClipboard.swf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/img/components.png" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/img/components.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/img/devices.png" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/img/devices.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/img/sass-less.png" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/img/sass-less.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/dist/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/dist/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/dist/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/dist/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/dist/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/dist/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/blog.jpg" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/blog.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/carousel.jpg" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/carousel.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/cover.jpg" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/cover.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/dashboard.jpg" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/dashboard.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/equal-height-columns.jpg" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/equal-height-columns.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/grid.jpg" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/grid.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/jumbotron-narrow.jpg" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/jumbotron-narrow.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/jumbotron.jpg" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/jumbotron.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/justified-nav.jpg" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/justified-nav.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/navbar-fixed.jpg" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/navbar-fixed.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/navbar-static.jpg" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/navbar-static.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/navbar.jpg" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/navbar.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/non-responsive.jpg" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/non-responsive.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/offcanvas.jpg" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/offcanvas.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/sign-in.jpg" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/sign-in.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/starter-template.jpg" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/starter-template.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/sticky-footer-navbar.jpg" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/sticky-footer-navbar.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/sticky-footer.jpg" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/sticky-footer.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/theme.jpg" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/screenshots/theme.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/favicon.ico" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/favicon.ico" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/fonts/themify.eot" afterPath="$PROJECT_DIR$/dashboard/assets/fonts/themify.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/fonts/themify.ttf" afterPath="$PROJECT_DIR$/dashboard/assets/fonts/themify.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/fonts/themify.woff" afterPath="$PROJECT_DIR$/dashboard/assets/fonts/themify.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/img/apple-icon.png" afterPath="$PROJECT_DIR$/dashboard/assets/img/apple-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/img/background.jpg" afterPath="$PROJECT_DIR$/dashboard/assets/img/background.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/img/faces/face-0.jpg" afterPath="$PROJECT_DIR$/dashboard/assets/img/faces/face-0.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/img/faces/face-1.jpg" afterPath="$PROJECT_DIR$/dashboard/assets/img/faces/face-1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/img/faces/face-2.jpg" afterPath="$PROJECT_DIR$/dashboard/assets/img/faces/face-2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/img/faces/face-3.jpg" afterPath="$PROJECT_DIR$/dashboard/assets/img/faces/face-3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/img/favicon.png" afterPath="$PROJECT_DIR$/dashboard/assets/img/favicon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/img/locked-padlock-with-chain.png" afterPath="$PROJECT_DIR$/dashboard/assets/img/locked-padlock-with-chain.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/img/new_logo.png" afterPath="$PROJECT_DIR$/dashboard/assets/img/new_logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/img/tim_80x80.png" afterPath="$PROJECT_DIR$/dashboard/assets/img/tim_80x80.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumenta/winter-mountain-lake.jpg" afterPath="$PROJECT_DIR$/dokumenta/winter-mountain-lake.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/images/book.png" afterPath="$PROJECT_DIR$/skin/images/book.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/images/books.png" afterPath="$PROJECT_DIR$/skin/images/books.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/images/boy.png" afterPath="$PROJECT_DIR$/skin/images/boy.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/images/color-bg-left-bottom.png" afterPath="$PROJECT_DIR$/skin/images/color-bg-left-bottom.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/images/color-bg-right-bottom.png" afterPath="$PROJECT_DIR$/skin/images/color-bg-right-bottom.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/images/color-bg-right-top.png" afterPath="$PROJECT_DIR$/skin/images/color-bg-right-top.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/images/lock.png" afterPath="$PROJECT_DIR$/skin/images/lock.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/images/pattern-1.png" afterPath="$PROJECT_DIR$/skin/images/pattern-1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/images/robot.jpg" afterPath="$PROJECT_DIR$/skin/images/robot.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/personalManager.iml" afterPath="$PROJECT_DIR$/.idea/personalManager.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/css/animate.min.css" afterPath="$PROJECT_DIR$/admin/assets/css/animate.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/admin/assets/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/css/demo.css" afterPath="$PROJECT_DIR$/admin/assets/css/demo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/css/paper-dashboard.css" afterPath="$PROJECT_DIR$/admin/assets/css/paper-dashboard.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/css/themify-icons.css" afterPath="$PROJECT_DIR$/admin/assets/css/themify-icons.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/fonts/themify.svg" afterPath="$PROJECT_DIR$/admin/assets/fonts/themify.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/js/bootstrap-checkbox-radio.js" afterPath="$PROJECT_DIR$/admin/assets/js/bootstrap-checkbox-radio.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/js/bootstrap-notify.js" afterPath="$PROJECT_DIR$/admin/assets/js/bootstrap-notify.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/admin/assets/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/js/chartist.min.js" afterPath="$PROJECT_DIR$/admin/assets/js/chartist.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/js/demo.js" afterPath="$PROJECT_DIR$/admin/assets/js/demo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/js/jquery-1.10.2.js" afterPath="$PROJECT_DIR$/admin/assets/js/jquery-1.10.2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/js/paper-dashboard.js" afterPath="$PROJECT_DIR$/admin/assets/js/paper-dashboard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/sass/paper-dashboard.scss" afterPath="$PROJECT_DIR$/admin/assets/sass/paper-dashboard.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/sass/paper/_alerts.scss" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/_alerts.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/sass/paper/_buttons.scss" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/_buttons.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/sass/paper/_cards.scss" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/_cards.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/sass/paper/_chartist.scss" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/_chartist.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/sass/paper/_checkbox-radio.scss" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/_checkbox-radio.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/sass/paper/_dropdown.scss" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/_dropdown.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/sass/paper/_footers.scss" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/_footers.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/sass/paper/_inputs.scss" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/_inputs.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/sass/paper/_misc.scss" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/_misc.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/sass/paper/_mixins.scss" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/_mixins.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/sass/paper/_navbars.scss" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/_navbars.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/sass/paper/_responsive.scss" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/_responsive.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/sass/paper/_sidebar-and-main-panel.scss" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/_sidebar-and-main-panel.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/sass/paper/_tables.scss" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/_tables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/sass/paper/_typography.scss" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/_typography.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/sass/paper/_variables.scss" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_buttons.scss" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_buttons.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_cards.scss" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_cards.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_chartist.scss" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_chartist.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_icons.scss" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_icons.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_inputs.scss" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_inputs.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_labels.scss" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_labels.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_navbars.scss" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_navbars.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_sidebar.scss" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_sidebar.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_tabs.scss" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_tabs.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_transparency.scss" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_transparency.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_vendor-prefixes.scss" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_vendor-prefixes.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/dashboard.php" afterPath="$PROJECT_DIR$/admin/dashboard.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/documentation/css/documentation.css" afterPath="$PROJECT_DIR$/admin/documentation/css/documentation.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/dokumente.php" afterPath="$PROJECT_DIR$/admin/dokumente.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/index.php" afterPath="$PROJECT_DIR$/admin/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/njoftime.php" afterPath="$PROJECT_DIR$/admin/njoftime.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/user.php" afterPath="$PROJECT_DIR$/admin/user.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/.editorconfig" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/.editorconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/.gitattributes" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/.gitattributes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/.gitignore" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/.travis.yml" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/CNAME" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/CNAME" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/Gruntfile.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/Gruntfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/LICENSE" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/README.md" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/_config.yml" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/_config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/bower.json" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/composer.json" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/dist/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/dist/css/bootstrap-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/dist/css/bootstrap-theme.css.map" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/dist/css/bootstrap-theme.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/dist/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/dist/css/bootstrap-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/dist/css/bootstrap.css" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/dist/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/dist/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/dist/css/bootstrap.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/dist/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/dist/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/dist/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/dist/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/dist/js/bootstrap.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/dist/js/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/dist/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/dist/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/LICENSE" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_data/core-team.yml" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_data/core-team.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_data/glyphicons.yml" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_data/glyphicons.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_data/sass-team.yml" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_data/sass-team.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_data/showcase.yml" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_data/showcase.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_data/translations.yml" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_data/translations.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/ads.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/ads.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/alerts.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/alerts.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/badges.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/badges.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/breadcrumbs.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/breadcrumbs.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/button-dropdowns.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/button-dropdowns.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/button-groups.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/button-groups.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/dropdowns.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/dropdowns.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/glyphicons.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/glyphicons.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/input-groups.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/input-groups.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/jumbotron.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/jumbotron.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/labels.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/labels.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/list-group.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/list-group.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/media.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/media.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/navbar.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/navbar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/navs.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/navs.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/page-header.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/page-header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/pagination.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/pagination.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/panels.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/panels.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/progress-bars.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/progress-bars.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/responsive-embed.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/responsive-embed.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/thumbnails.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/thumbnails.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/wells.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/components/wells.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/css/buttons.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/css/buttons.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/css/code.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/css/code.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/css/forms.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/css/forms.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/css/grid.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/css/grid.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/css/helpers.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/css/helpers.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/css/images.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/css/images.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/css/less.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/css/less.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/css/overview.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/css/overview.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/css/responsive-utilities.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/css/responsive-utilities.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/css/sass.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/css/sass.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/css/tables.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/css/tables.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/css/type.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/css/type.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/customizer-variables.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/customizer-variables.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/footer.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/footer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/getting-started/accessibility.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/getting-started/accessibility.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/getting-started/browser-device-support.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/getting-started/browser-device-support.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/getting-started/community.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/getting-started/community.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/getting-started/disabling-responsiveness.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/getting-started/disabling-responsiveness.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/getting-started/download.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/getting-started/download.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/getting-started/examples.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/getting-started/examples.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/getting-started/grunt.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/getting-started/grunt.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/getting-started/license.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/getting-started/license.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/getting-started/template.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/getting-started/template.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/getting-started/third-party-support.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/getting-started/third-party-support.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/getting-started/translations.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/getting-started/translations.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/getting-started/whats-included.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/getting-started/whats-included.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/header.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/js/affix.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/js/affix.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/js/alerts.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/js/alerts.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/js/buttons.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/js/buttons.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/js/carousel.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/js/carousel.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/js/collapse.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/js/collapse.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/js/dropdowns.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/js/dropdowns.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/js/modal.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/js/modal.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/js/overview.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/js/overview.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/js/popovers.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/js/popovers.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/js/scrollspy.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/js/scrollspy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/js/tabs.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/js/tabs.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/js/tooltips.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/js/tooltips.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/js/transitions.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/js/transitions.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/nav/about.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/nav/about.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/nav/components.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/nav/components.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/nav/css.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/nav/css.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/nav/customize.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/nav/customize.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/nav/getting-started.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/nav/getting-started.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/nav/javascript.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/nav/javascript.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/nav/main.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/nav/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/nav/migration.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/nav/migration.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/social-buttons.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_includes/social-buttons.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_jade/customizer-nav.jade" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_jade/customizer-nav.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_jade/customizer-variables.jade" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_jade/customizer-variables.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_layouts/default.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_layouts/default.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_layouts/home.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/_layouts/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/about.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/about.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/brand/bootstrap-outline.svg" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/brand/bootstrap-outline.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/brand/bootstrap-punchout.svg" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/brand/bootstrap-punchout.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/brand/bootstrap-solid.svg" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/brand/bootstrap-solid.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/css/_src/docs.css" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/css/_src/docs.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/css/_src/pygments-manni.css" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/css/_src/pygments-manni.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/css/docs.min.css" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/css/docs.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/js/_src/application.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/js/_src/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/js/_src/customizer.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/js/_src/customizer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/js/_vendor/ZeroClipboard.min.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/js/_vendor/ZeroClipboard.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/js/_vendor/blob.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/js/_vendor/blob.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/js/_vendor/filesaver.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/js/_vendor/filesaver.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/js/_vendor/holder.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/js/_vendor/holder.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/js/_vendor/jszip.min.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/js/_vendor/jszip.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/js/_vendor/less.min.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/js/_vendor/less.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/js/_vendor/uglify.min.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/js/_vendor/uglify.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/js/customize.min.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/js/customize.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/js/docs.min.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/js/docs.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/js/ie-emulation-modes-warning.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/js/ie-emulation-modes-warning.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/js/ie10-viewport-bug-workaround.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/js/ie10-viewport-bug-workaround.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/js/ie8-responsive-file-warning.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/js/ie8-responsive-file-warning.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/js/raw-files.min.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/assets/js/raw-files.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/browser-bugs.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/browser-bugs.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/components.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/components.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/css.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/css.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/customize.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/customize.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/dist/css/bootstrap-theme.css.map" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/dist/css/bootstrap-theme.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/dist/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/dist/css/bootstrap-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/dist/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/dist/css/bootstrap.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/dist/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/dist/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/dist/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/dist/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/dist/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/dist/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/blog/blog.css" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/blog/blog.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/blog/index.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/blog/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/carousel/carousel.css" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/carousel/carousel.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/carousel/index.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/carousel/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/cover/cover.css" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/cover/cover.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/cover/index.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/cover/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/dashboard/dashboard.css" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/dashboard/dashboard.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/dashboard/index.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/dashboard/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/grid/grid.css" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/grid/grid.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/grid/index.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/grid/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/jumbotron-narrow/index.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/jumbotron-narrow/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/jumbotron-narrow/jumbotron-narrow.css" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/jumbotron-narrow/jumbotron-narrow.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/jumbotron/index.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/jumbotron/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/jumbotron/jumbotron.css" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/jumbotron/jumbotron.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/justified-nav/index.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/justified-nav/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/justified-nav/justified-nav.css" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/justified-nav/justified-nav.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/navbar-fixed-top/index.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/navbar-fixed-top/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/navbar-fixed-top/navbar-fixed-top.css" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/navbar-fixed-top/navbar-fixed-top.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/navbar-static-top/index.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/navbar-static-top/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/navbar-static-top/navbar-static-top.css" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/navbar-static-top/navbar-static-top.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/navbar/index.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/navbar/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/navbar/navbar.css" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/navbar/navbar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/non-responsive/index.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/non-responsive/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/non-responsive/non-responsive.css" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/non-responsive/non-responsive.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/offcanvas/index.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/offcanvas/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/offcanvas/offcanvas.css" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/offcanvas/offcanvas.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/offcanvas/offcanvas.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/offcanvas/offcanvas.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/signin/index.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/signin/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/signin/signin.css" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/signin/signin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/starter-template/index.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/starter-template/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/starter-template/starter-template.css" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/starter-template/starter-template.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/sticky-footer-navbar/index.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/sticky-footer-navbar/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/sticky-footer-navbar/sticky-footer-navbar.css" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/sticky-footer-navbar/sticky-footer-navbar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/sticky-footer/index.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/sticky-footer/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/sticky-footer/sticky-footer.css" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/sticky-footer/sticky-footer.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/theme/index.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/theme/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/theme/theme.css" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/theme/theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/tooltip-viewport/index.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/tooltip-viewport/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/tooltip-viewport/tooltip-viewport.css" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/tooltip-viewport/tooltip-viewport.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/tooltip-viewport/tooltip-viewport.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/examples/tooltip-viewport/tooltip-viewport.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/getting-started.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/getting-started.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/index.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/javascript.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/javascript.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/migration.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/migration.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/robots.txt" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/robots.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/sitemap.xml" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/docs/sitemap.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/grunt/.jshintrc" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/grunt/.jshintrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/grunt/bs-glyphicons-data-generator.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/grunt/bs-glyphicons-data-generator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/grunt/bs-lessdoc-parser.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/grunt/bs-lessdoc-parser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/grunt/bs-raw-files-generator.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/grunt/bs-raw-files-generator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/grunt/sauce_browsers.yml" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/grunt/sauce_browsers.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/.jscsrc" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/.jscsrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/.jshintrc" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/.jshintrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/affix.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/affix.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/alert.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/alert.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/button.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/button.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/carousel.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/carousel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/collapse.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/collapse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/dropdown.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/dropdown.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/modal.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/modal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/popover.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/popover.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/scrollspy.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/scrollspy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tab.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tab.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/index.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/unit/.jshintrc" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/unit/.jshintrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/unit/affix.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/unit/affix.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/unit/alert.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/unit/alert.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/unit/button.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/unit/button.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/unit/carousel.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/unit/carousel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/unit/collapse.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/unit/collapse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/unit/dropdown.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/unit/dropdown.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/unit/modal.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/unit/modal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/unit/phantom.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/unit/phantom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/unit/popover.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/unit/popover.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/unit/scrollspy.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/unit/scrollspy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/unit/tab.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/unit/tab.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/unit/tooltip.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/unit/tooltip.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/vendor/jquery.min.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/vendor/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/vendor/qunit.css" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/vendor/qunit.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/vendor/qunit.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/vendor/qunit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/visual/affix.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/visual/affix.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/visual/alert.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/visual/alert.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/visual/button.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/visual/button.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/visual/carousel.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/visual/carousel.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/visual/collapse.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/visual/collapse.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/visual/dropdown.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/visual/dropdown.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/visual/modal.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/visual/modal.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/visual/popover.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/visual/popover.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/visual/scrollspy.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/visual/scrollspy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/visual/tab.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/visual/tab.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/visual/tooltip.html" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tests/visual/tooltip.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tooltip.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/tooltip.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/transition.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/js/transition.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/.csscomb.json" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/.csscomb.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/.csslintrc" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/.csslintrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/alerts.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/alerts.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/badges.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/badges.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/bootstrap.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/bootstrap.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/breadcrumbs.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/breadcrumbs.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/button-groups.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/button-groups.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/buttons.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/buttons.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/carousel.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/carousel.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/close.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/close.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/code.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/code.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/component-animations.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/component-animations.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/dropdowns.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/dropdowns.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/forms.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/forms.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/glyphicons.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/glyphicons.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/grid.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/grid.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/input-groups.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/input-groups.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/jumbotron.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/jumbotron.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/labels.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/labels.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/list-group.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/list-group.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/media.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/media.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/alerts.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/alerts.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/background-variant.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/background-variant.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/border-radius.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/border-radius.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/buttons.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/buttons.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/center-block.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/center-block.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/clearfix.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/clearfix.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/forms.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/forms.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/gradients.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/gradients.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/grid-framework.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/grid-framework.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/grid.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/grid.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/hide-text.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/hide-text.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/image.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/image.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/labels.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/labels.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/list-group.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/list-group.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/nav-divider.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/nav-divider.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/nav-vertical-align.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/nav-vertical-align.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/opacity.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/opacity.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/pagination.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/pagination.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/panels.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/panels.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/progress-bar.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/progress-bar.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/reset-filter.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/reset-filter.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/resize.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/resize.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/responsive-visibility.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/responsive-visibility.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/size.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/size.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/tab-focus.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/tab-focus.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/table-row.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/table-row.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/text-emphasis.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/text-emphasis.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/text-overflow.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/text-overflow.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/vendor-prefixes.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/mixins/vendor-prefixes.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/modals.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/modals.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/navbar.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/navbar.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/navs.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/navs.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/normalize.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/normalize.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/pager.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/pager.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/pagination.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/pagination.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/panels.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/panels.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/popovers.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/popovers.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/print.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/print.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/progress-bars.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/progress-bars.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/responsive-embed.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/responsive-embed.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/responsive-utilities.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/responsive-utilities.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/scaffolding.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/scaffolding.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/tables.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/tables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/theme.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/theme.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/thumbnails.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/thumbnails.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/tooltip.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/tooltip.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/type.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/type.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/utilities.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/utilities.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/variables.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/wells.less" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/less/wells.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/package.json" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/test-infra/README.md" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/test-infra/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/test-infra/S3Cachefile.json" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/test-infra/S3Cachefile.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/test-infra/npm-shrinkwrap.json" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/test-infra/npm-shrinkwrap.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/test-infra/requirements.txt" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/test-infra/requirements.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/test-infra/s3_cache.py" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/test-infra/s3_cache.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/test-infra/uncached-npm-install.sh" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-3.2.0/test-infra/uncached-npm-install.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-validator/css/bootstrapValidator.min.css" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-validator/css/bootstrapValidator.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap-validator/js/bootstrapvalidator.min.js" afterPath="$PROJECT_DIR$/bootstrap/bootstrap-validator/js/bootstrapvalidator.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/js/jquery.min.js" afterPath="$PROJECT_DIR$/bootstrap/js/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/js/jquery.min.map" afterPath="$PROJECT_DIR$/bootstrap/js/jquery.min.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/modernizr.min.js" afterPath="$PROJECT_DIR$/bootstrap/modernizr.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/css/animate.min.css" afterPath="$PROJECT_DIR$/dashboard/assets/css/animate.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/dashboard/assets/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/css/demo.css" afterPath="$PROJECT_DIR$/dashboard/assets/css/demo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/css/paper-dashboard.css" afterPath="$PROJECT_DIR$/dashboard/assets/css/paper-dashboard.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/css/themify-icons.css" afterPath="$PROJECT_DIR$/dashboard/assets/css/themify-icons.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/fonts/themify.svg" afterPath="$PROJECT_DIR$/dashboard/assets/fonts/themify.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/js/bootstrap-checkbox-radio.js" afterPath="$PROJECT_DIR$/dashboard/assets/js/bootstrap-checkbox-radio.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/js/bootstrap-notify.js" afterPath="$PROJECT_DIR$/dashboard/assets/js/bootstrap-notify.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/dashboard/assets/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/js/chartist.min.js" afterPath="$PROJECT_DIR$/dashboard/assets/js/chartist.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/js/demo.js" afterPath="$PROJECT_DIR$/dashboard/assets/js/demo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/js/jquery-1.10.2.js" afterPath="$PROJECT_DIR$/dashboard/assets/js/jquery-1.10.2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/js/paper-dashboard.js" afterPath="$PROJECT_DIR$/dashboard/assets/js/paper-dashboard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/sass/paper-dashboard.scss" afterPath="$PROJECT_DIR$/dashboard/assets/sass/paper-dashboard.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/sass/paper/_alerts.scss" afterPath="$PROJECT_DIR$/dashboard/assets/sass/paper/_alerts.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/sass/paper/_buttons.scss" afterPath="$PROJECT_DIR$/dashboard/assets/sass/paper/_buttons.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/sass/paper/_cards.scss" afterPath="$PROJECT_DIR$/dashboard/assets/sass/paper/_cards.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/sass/paper/_chartist.scss" afterPath="$PROJECT_DIR$/dashboard/assets/sass/paper/_chartist.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/sass/paper/_checkbox-radio.scss" afterPath="$PROJECT_DIR$/dashboard/assets/sass/paper/_checkbox-radio.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/sass/paper/_dropdown.scss" afterPath="$PROJECT_DIR$/dashboard/assets/sass/paper/_dropdown.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/sass/paper/_footers.scss" afterPath="$PROJECT_DIR$/dashboard/assets/sass/paper/_footers.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/sass/paper/_inputs.scss" afterPath="$PROJECT_DIR$/dashboard/assets/sass/paper/_inputs.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/sass/paper/_misc.scss" afterPath="$PROJECT_DIR$/dashboard/assets/sass/paper/_misc.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/sass/paper/_mixins.scss" afterPath="$PROJECT_DIR$/dashboard/assets/sass/paper/_mixins.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/sass/paper/_navbars.scss" afterPath="$PROJECT_DIR$/dashboard/assets/sass/paper/_navbars.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/sass/paper/_responsive.scss" afterPath="$PROJECT_DIR$/dashboard/assets/sass/paper/_responsive.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/sass/paper/_sidebar-and-main-panel.scss" afterPath="$PROJECT_DIR$/dashboard/assets/sass/paper/_sidebar-and-main-panel.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/sass/paper/_tables.scss" afterPath="$PROJECT_DIR$/dashboard/assets/sass/paper/_tables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/sass/paper/_typography.scss" afterPath="$PROJECT_DIR$/dashboard/assets/sass/paper/_typography.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/sass/paper/_variables.scss" afterPath="$PROJECT_DIR$/dashboard/assets/sass/paper/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/sass/paper/mixins/_buttons.scss" afterPath="$PROJECT_DIR$/dashboard/assets/sass/paper/mixins/_buttons.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/sass/paper/mixins/_cards.scss" afterPath="$PROJECT_DIR$/dashboard/assets/sass/paper/mixins/_cards.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/sass/paper/mixins/_chartist.scss" afterPath="$PROJECT_DIR$/dashboard/assets/sass/paper/mixins/_chartist.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/sass/paper/mixins/_icons.scss" afterPath="$PROJECT_DIR$/dashboard/assets/sass/paper/mixins/_icons.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/sass/paper/mixins/_inputs.scss" afterPath="$PROJECT_DIR$/dashboard/assets/sass/paper/mixins/_inputs.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/sass/paper/mixins/_labels.scss" afterPath="$PROJECT_DIR$/dashboard/assets/sass/paper/mixins/_labels.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/sass/paper/mixins/_navbars.scss" afterPath="$PROJECT_DIR$/dashboard/assets/sass/paper/mixins/_navbars.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/sass/paper/mixins/_sidebar.scss" afterPath="$PROJECT_DIR$/dashboard/assets/sass/paper/mixins/_sidebar.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/sass/paper/mixins/_tabs.scss" afterPath="$PROJECT_DIR$/dashboard/assets/sass/paper/mixins/_tabs.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/sass/paper/mixins/_transparency.scss" afterPath="$PROJECT_DIR$/dashboard/assets/sass/paper/mixins/_transparency.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/assets/sass/paper/mixins/_vendor-prefixes.scss" afterPath="$PROJECT_DIR$/dashboard/assets/sass/paper/mixins/_vendor-prefixes.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/documentation/css/documentation.css" afterPath="$PROJECT_DIR$/dashboard/documentation/css/documentation.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/documentation/documentation.html" afterPath="$PROJECT_DIR$/dashboard/documentation/documentation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/dokumente.php" afterPath="$PROJECT_DIR$/dashboard/dokumente.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/email.php" afterPath="$PROJECT_DIR$/dashboard/email.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/export.php" afterPath="$PROJECT_DIR$/dashboard/export.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/index.php" afterPath="$PROJECT_DIR$/dashboard/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/karta.php" afterPath="$PROJECT_DIR$/dashboard/karta.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/kontakte_telefonike.php" afterPath="$PROJECT_DIR$/dashboard/kontakte_telefonike.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/njoftime.php" afterPath="$PROJECT_DIR$/dashboard/njoftime.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/shenime.php" afterPath="$PROJECT_DIR$/dashboard/shenime.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/user.php" afterPath="$PROJECT_DIR$/dashboard/user.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/css/bootstrap-datepicker.css" afterPath="$PROJECT_DIR$/datepicker/css/bootstrap-datepicker.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/css/bootstrap-datepicker.css.map" afterPath="$PROJECT_DIR$/datepicker/css/bootstrap-datepicker.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/css/bootstrap-datepicker.min.css" afterPath="$PROJECT_DIR$/datepicker/css/bootstrap-datepicker.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/css/bootstrap-datepicker.min.css.map" afterPath="$PROJECT_DIR$/datepicker/css/bootstrap-datepicker.min.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/css/bootstrap-datepicker.standalone.css" afterPath="$PROJECT_DIR$/datepicker/css/bootstrap-datepicker.standalone.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/css/bootstrap-datepicker.standalone.css.map" afterPath="$PROJECT_DIR$/datepicker/css/bootstrap-datepicker.standalone.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/css/bootstrap-datepicker.standalone.min.css" afterPath="$PROJECT_DIR$/datepicker/css/bootstrap-datepicker.standalone.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/css/bootstrap-datepicker.standalone.min.css.map" afterPath="$PROJECT_DIR$/datepicker/css/bootstrap-datepicker.standalone.min.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/css/bootstrap-datepicker3.css" afterPath="$PROJECT_DIR$/datepicker/css/bootstrap-datepicker3.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/css/bootstrap-datepicker3.css.map" afterPath="$PROJECT_DIR$/datepicker/css/bootstrap-datepicker3.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/css/bootstrap-datepicker3.min.css" afterPath="$PROJECT_DIR$/datepicker/css/bootstrap-datepicker3.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/css/bootstrap-datepicker3.min.css.map" afterPath="$PROJECT_DIR$/datepicker/css/bootstrap-datepicker3.min.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/css/bootstrap-datepicker3.standalone.css" afterPath="$PROJECT_DIR$/datepicker/css/bootstrap-datepicker3.standalone.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/css/bootstrap-datepicker3.standalone.css.map" afterPath="$PROJECT_DIR$/datepicker/css/bootstrap-datepicker3.standalone.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/css/bootstrap-datepicker3.standalone.min.css" afterPath="$PROJECT_DIR$/datepicker/css/bootstrap-datepicker3.standalone.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/css/bootstrap-datepicker3.standalone.min.css.map" afterPath="$PROJECT_DIR$/datepicker/css/bootstrap-datepicker3.standalone.min.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/js/bootstrap-datepicker.js" afterPath="$PROJECT_DIR$/datepicker/js/bootstrap-datepicker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/js/bootstrap-datepicker.min.js" afterPath="$PROJECT_DIR$/datepicker/js/bootstrap-datepicker.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.ar.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.ar.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.az.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.az.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.bg.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.bg.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.bs.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.bs.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.ca.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.ca.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.cs.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.cs.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.cy.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.cy.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.da.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.da.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.de.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.de.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.el.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.el.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.en-AU.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.en-AU.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.en-GB.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.en-GB.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.eo.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.eo.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.es.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.es.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.et.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.et.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.eu.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.eu.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.fa.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.fa.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.fi.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.fi.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.fo.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.fo.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.fr-CH.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.fr-CH.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.fr.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.fr.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.gl.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.gl.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.he.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.he.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.hr.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.hr.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.hu.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.hu.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.hy.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.hy.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.id.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.id.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.is.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.is.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.it-CH.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.it-CH.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.it.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.it.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.ja.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.ja.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.ka.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.ka.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.kh.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.kh.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.kk.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.kk.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.ko.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.ko.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.kr.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.kr.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.lt.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.lt.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.lv.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.lv.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.me.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.me.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.mk.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.mk.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.mn.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.mn.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.ms.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.ms.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.nb.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.nb.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.nl-BE.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.nl-BE.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.nl.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.nl.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.no.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.no.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.pl.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.pl.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.pt-BR.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.pt-BR.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.pt.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.pt.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.ro.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.ro.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.rs-latin.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.rs-latin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.rs.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.rs.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.ru.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.ru.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.sk.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.sk.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.sl.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.sl.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.sq.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.sq.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.sr-latin.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.sr-latin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.sr.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.sr.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.sv.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.sv.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.sw.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.sw.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.th.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.th.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.tr.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.tr.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.uk.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.uk.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.vi.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.vi.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.zh-CN.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.zh-CN.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.zh-TW.min.js" afterPath="$PROJECT_DIR$/datepicker/locales/bootstrap-datepicker.zh-TW.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/css/style.css" afterPath="$PROJECT_DIR$/skin/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/js/custom_scripts.js" afterPath="$PROJECT_DIR$/skin/js/custom_scripts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/js/login_validation.js" afterPath="$PROJECT_DIR$/skin/js/login_validation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/js/register_validation.js" afterPath="$PROJECT_DIR$/skin/js/register_validation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/admin_login.php" afterPath="$PROJECT_DIR$/src/admin_login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/aprovoUser.php" afterPath="$PROJECT_DIR$/src/aprovoUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/editoUser.php" afterPath="$PROJECT_DIR$/src/editoUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/eksportoKontakte.php" afterPath="$PROJECT_DIR$/src/eksportoKontakte.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/eksportoKontakteStyled.php" afterPath="$PROJECT_DIR$/src/eksportoKontakteStyled.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fshiFile.php" afterPath="$PROJECT_DIR$/src/fshiFile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fshiUser.php" afterPath="$PROJECT_DIR$/src/fshiUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fshi_email.php" afterPath="$PROJECT_DIR$/src/fshi_email.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fshi_karte.php" afterPath="$PROJECT_DIR$/src/fshi_karte.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fshi_njoftim.php" afterPath="$PROJECT_DIR$/src/fshi_njoftim.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fshi_shenime.php" afterPath="$PROJECT_DIR$/src/fshi_shenime.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fshi_telefon.php" afterPath="$PROJECT_DIR$/src/fshi_telefon.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/login.php" afterPath="$PROJECT_DIR$/src/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/registration.php" afterPath="$PROJECT_DIR$/src/registration.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/shikoFile.php" afterPath="$PROJECT_DIR$/src/shikoFile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/shtoEmail.php" afterPath="$PROJECT_DIR$/src/shtoEmail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/shtoFile.php" afterPath="$PROJECT_DIR$/src/shtoFile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/shtoKarte.php" afterPath="$PROJECT_DIR$/src/shtoKarte.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/shtoKontakt.php" afterPath="$PROJECT_DIR$/src/shtoKontakt.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/shtoShenim.php" afterPath="$PROJECT_DIR$/src/shtoShenim.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xml/user_id-.xml" afterPath="$PROJECT_DIR$/src/xml/user_id-.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xml/user_id-1.xml" afterPath="$PROJECT_DIR$/src/xml/user_id-1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin_login.php" afterPath="$PROJECT_DIR$/views/admin_login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/customer_dashboard.phtml" afterPath="$PROJECT_DIR$/views/customer_dashboard.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/footer.php" afterPath="$PROJECT_DIR$/views/footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/head.phtml" afterPath="$PROJECT_DIR$/views/head.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/header.php" afterPath="$PROJECT_DIR$/views/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/homepage.php" afterPath="$PROJECT_DIR$/views/homepage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/login.php" afterPath="$PROJECT_DIR$/views/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/registration.php" afterPath="$PROJECT_DIR$/views/registration.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,48 +624,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skin/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="542" column="26" lean-forward="false" selection-start-line="542" selection-start-column="26" selection-end-line="542" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registration.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/registration.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="910">
-              <caret line="179" column="30" lean-forward="true" selection-start-line="179" selection-start-column="30" selection-end-line="179" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/test">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="571">
-              <caret line="179" column="30" lean-forward="false" selection-start-line="179" selection-start-column="30" selection-end-line="179" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -126,13 +663,32 @@
         <option value="$PROJECT_DIR$/views/style.css" />
         <option value="$PROJECT_DIR$/views/homepage.phtml" />
         <option value="$PROJECT_DIR$/skin/js/custom_scripts.js" />
-        <option value="$PROJECT_DIR$/views/footer.php" />
-        <option value="$PROJECT_DIR$/views/homepage.php" />
         <option value="$PROJECT_DIR$/views/header.php" />
-        <option value="$PROJECT_DIR$/views/registration.php" />
         <option value="$PROJECT_DIR$/views/test" />
         <option value="$PROJECT_DIR$/skin/css/style.css" />
         <option value="$PROJECT_DIR$/views/login.php" />
+        <option value="$PROJECT_DIR$/functions.php" />
+        <option value="$PROJECT_DIR$/views/footer.php" />
+        <option value="$PROJECT_DIR$/src/eksportoKontakteStyled.php" />
+        <option value="$PROJECT_DIR$/admin/user.php" />
+        <option value="$PROJECT_DIR$/admin/dokumente.php" />
+        <option value="$PROJECT_DIR$/views/admin_login.php" />
+        <option value="$PROJECT_DIR$/dashboard/shenime.php" />
+        <option value="$PROJECT_DIR$/src/login.php" />
+        <option value="$PROJECT_DIR$/admin/njoftime.php" />
+        <option value="$PROJECT_DIR$/src/eksportoKontakte.php" />
+        <option value="$PROJECT_DIR$/src/admin_login.php" />
+        <option value="$PROJECT_DIR$/src/config.php" />
+        <option value="$PROJECT_DIR$/views/homepage.php" />
+        <option value="$PROJECT_DIR$/views/registration.php" />
+        <option value="$PROJECT_DIR$/src/registration.php" />
+        <option value="$PROJECT_DIR$/skin/js/register_validation.js" />
+        <option value="$PROJECT_DIR$/skin/js/login_validation.js" />
+        <option value="$PROJECT_DIR$/dokumenta/.htaccess" />
+        <option value="$PROJECT_DIR$/dashboard/user.php" />
+        <option value="$PROJECT_DIR$/src/viewFile.php" />
+        <option value="$PROJECT_DIR$/dashboard/dokumente.php" />
+        <option value="$PROJECT_DIR$/dashboard/kontakte_telefonike.php" />
       </list>
     </option>
   </component>
@@ -143,11 +699,11 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="71" />
-    <option name="y" value="83" />
-    <option name="width" value="1359" />
-    <option name="height" value="688" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -167,8 +723,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -179,33 +733,29 @@
             <path>
               <item name="personalManager" type="b2602c69:ProjectViewProjectNode" />
               <item name="personalManager" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dashboard" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="personalManager" type="b2602c69:ProjectViewProjectNode" />
               <item name="personalManager" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="skin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dokumenta" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="personalManager" type="b2602c69:ProjectViewProjectNode" />
               <item name="personalManager" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="skin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="personalManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personalManager" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../libraria" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
@@ -242,26 +792,39 @@
       <workItem from="1517343631781" duration="5517000" />
       <workItem from="1517651395281" duration="96000" />
       <workItem from="1517652497319" duration="17186000" />
+      <workItem from="1518078596870" duration="10383000" />
+      <workItem from="1518090824893" duration="201000" />
+      <workItem from="1518103216152" duration="3412000" />
+      <workItem from="1518110377395" duration="3201000" />
+      <workItem from="1518116877120" duration="1620000" />
+      <workItem from="1518127606443" duration="603000" />
+      <workItem from="1518356950951" duration="146000" />
+      <workItem from="1518383380131" duration="15000" />
+      <workItem from="1518452795604" duration="3121000" />
+      <workItem from="1518457324362" duration="608000" />
+      <workItem from="1518460689483" duration="371000" />
+      <workItem from="1518468558079" duration="604000" />
+      <workItem from="1518531819863" duration="604000" />
+      <workItem from="1518544806728" duration="32000" />
+      <workItem from="1518613955125" duration="130000" />
+      <workItem from="1518630127807" duration="27000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22799000" />
+    <option name="totallyTimeSpent" value="47877000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1321" height="780" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16544656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42262372" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -269,8 +832,30 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37549096" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -283,11 +868,80 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/admin_login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/admin_login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="55" column="19" lean-forward="true" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/njoftime.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1584">
+          <caret line="88" column="54" lean-forward="false" selection-start-line="88" selection-start-column="54" selection-end-line="88" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/js/login_validation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/admin_login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1134">
+          <caret line="42" column="4" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="56" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14634">
+          <caret line="542" column="1" lean-forward="true" selection-start-line="542" selection-start-column="1" selection-end-line="542" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/registration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4509">
+          <caret line="167" column="30" lean-forward="true" selection-start-line="167" selection-start-column="30" selection-end-line="167" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/head.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -295,47 +949,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin_dashboard.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/header.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin_dashboard.phtml" />
+    <entry file="file://$PROJECT_DIR$/views/header.phtml" />
     <entry file="file://$PROJECT_DIR$/skin/js/custom_scripts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="51" lean-forward="false" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/homepage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="100" column="38" lean-forward="false" selection-start-line="100" selection-start-column="34" selection-end-line="100" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -343,47 +965,250 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="517">
           <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/test">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="179" column="30" lean-forward="false" selection-start-line="179" selection-start-column="30" selection-end-line="179" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/views/test" />
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="41" column="15" lean-forward="false" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/registration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="910">
-          <caret line="179" column="30" lean-forward="true" selection-start-line="179" selection-start-column="30" selection-end-line="179" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/skin/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="542" column="26" lean-forward="false" selection-start-line="542" selection-start-column="26" selection-end-line="542" selection-end-column="26" />
-          <folding />
+        <state relative-caret-position="546">
+          <caret line="542" column="1" lean-forward="false" selection-start-line="542" selection-start-column="1" selection-end-line="542" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/karta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/email.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3402">
+          <caret line="128" column="50" lean-forward="false" selection-start-line="128" selection-start-column="50" selection-end-line="128" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
-          <folding />
+        <state relative-caret-position="681">
+          <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/dokumente.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="19" column="15" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/njoftime.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/shenime.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="164" column="60" lean-forward="false" selection-start-line="164" selection-start-column="60" selection-end-line="164" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/njoftime.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="88" column="54" lean-forward="false" selection-start-line="88" selection-start-column="54" selection-end-line="88" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/export.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xml/KontaktEksport_2018-02-04-01-51-39.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/admin_login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="48" column="27" lean-forward="false" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eksportoKontakte.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eksportoKontakteStyled.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="56" column="28" lean-forward="true" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin_login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="9" column="44" lean-forward="false" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/homepage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="78" column="21" lean-forward="false" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/registration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/registration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="204" column="30" lean-forward="false" selection-start-line="204" selection-start-column="30" selection-end-line="204" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/js/login_validation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="49" column="3" lean-forward="false" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/js/register_validation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="113" column="3" lean-forward="false" selection-start-line="113" selection-start-column="3" selection-end-line="113" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shtoFile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/viewFile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="289" column="68" lean-forward="false" selection-start-line="289" selection-start-column="68" selection-end-line="289" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dokumenta/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="13" lean-forward="true" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shikoFile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/dokumente.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="127" column="53" lean-forward="false" selection-start-line="127" selection-start-column="48" selection-end-line="127" selection-end-column="53" />
+          <folding>
+            <marker date="1518457643868" expanded="true" signature="361:419" ph="SELECT * FRO... file" />
+            <marker date="1518457643868" expanded="true" signature="472:499" ph="SELECT * FRO... kategori_file" />
+            <marker date="1518457643868" expanded="true" signature="613:679" ph="SELECT * FRO... kategori_file" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/kontakte_telefonike.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="175" column="66" lean-forward="false" selection-start-line="175" selection-start-column="66" selection-end-line="175" selection-end-column="66" />
         </state>
       </provider>
     </entry>

@@ -10,7 +10,7 @@ if (!isset($_SESSION['admin_logged_in'])) {
 /**
  * merr userat nga database
  */
-$userId = $_SESSION['user_id'];
+$userId = $_SESSION['admin_id'];
 $userSql = "SELECT * FROM `perdorues`";
 $users = $conn->query($userSql);
 
@@ -21,7 +21,7 @@ $users = $conn->query($userSql);
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/locked-padlock-with-chain">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/locked-padlock-with-chain.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
     <title>Admin Dashboard</title>

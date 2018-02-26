@@ -208,13 +208,15 @@ function getFileCategory($categoryId, $conn)
                     <div class="col-md-12">
                         <div class="card">
                             <?php
-                            foreach ($results as $result) {
-                                ?>
-                                <div class="alert alert-warning">
-                                    <span><?php echo $result ?></span>
-                                </div><br>
-                                <?php
-                            } ?>
+                            if(isset($results)) {
+                                foreach ($results as $result) {
+                                    ?>
+                                    <div class="alert alert-warning">
+                                        <span><?php echo $result ?></span>
+                                    </div><br>
+                                    <?php
+                                }
+                            }?>
                             <div class="header">
                                 <h4 class="title">Dokumenta</h4>
                                 <p class="category">Lista e Dokumentave Tuaja</p>
@@ -237,7 +239,7 @@ function getFileCategory($categoryId, $conn)
                                             <td><?php echo formatFileSize(filesize('../dokumenta/' . $file['path'])) ?></td>
                                             <td><?php echo getFileCategory($file['kategori_id'], $conn) ?></td>
                                             <td><?php echo strtoupper($file['file_extension']) ?></td>
-                                            <td><a href="<?php echo '../dokumenta/' . $file['path'] ?>">Shiko</a> |
+                                            <td><a href="<?php echo '../src/viewFile.php?fileName=' . $file['path'] . '&fileExt=' . $file['file_extension'] ?>">Shiko</a> |
                                                 <a href="<?php echo '../src/fshiFile.php?fileId=' . $file['file_id'] . '&fileName=' . $file['path'] ?>">Fshi</a>
                                                 |
                                                 <a href="<?php echo '../src/shikoFile.php?fileName=' . $file['path'] . '&fileExt=' . $file['file_extension'] ?>">Shkarko</a>

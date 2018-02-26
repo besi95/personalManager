@@ -160,7 +160,26 @@ include '../src/config.php';
                                             <td><?php echo $telefon['emer_kontakti'];  ?></td>
                                             <td><?php echo $telefon['numri'];  ?></td>
                                             <td><?php echo $telefon['shteti'];  ?></td>
-                                            <td><?php echo $telefon['tipi'];  ?></td>
+                                            <td><?php
+                                                if($telefon['tipi'] == '1'){
+                                                    echo 'Telefon';
+
+                                                }
+                                                elseif($telefon['tipi'] == '2'){
+                                                 echo 'Fiks';
+                                                }
+                                                elseif($telefon['tipi'] == ''){
+                                                    echo 'Pune';
+                                                }
+                                                else{
+
+                                                    echo 'Tjeter';
+                                                }
+
+
+                                            ?>
+
+                                            </td>
                                             <td><a href="<?php echo '../src/fshi_telefon.php?telefonId='. $telefon['nr_id']; ?>">
                                                     Fshi Kontakt</a>
                                         </tr>

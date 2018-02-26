@@ -4,17 +4,19 @@ include "../functions.php";
 $baseUrl = getBaseUrl();
 
 $error = '';
-$username = mysqli_real_escape_string($conn, $_POST['admin_user']);
-$password = md5(mysqli_real_escape_string($conn, $_POST['user_password']));
-$privateToken = mysqli_real_escape_string($conn, $_POST['private_token']);
+$username = $_POST['admin_user'];
+$password = $_POST['user_password'];
+$privateToken = $_POST['private_token'];
 
-
+/**
+ * thirr funksionin e autentikimit
+ */
 $authenticate = authenticateAdmin($username, $password, $privateToken, $conn);
 $isAuthenticated = $authenticate['authenticated'];
 
 if ($isAuthenticated == 1) {
-    $row = $authenticate['row'];
 
+    $row = $authenticate['row'];
     session_start();
     $_SESSION['admin_logged_in'] = 1;
     $_SESSION['admin_id'] = $row['admin_id'];
@@ -30,20 +32,57 @@ if ($isAuthenticated == 1) {
 function authenticateAdmin($username, $password, $privateToken, $conn)
 {
 
-    $params = array();
-    $sql = "SELECT * FROM admin WHERE username = '{$username}' 
-                                and pasuord = '{$password}' 
-                                and secret_token = '{$privateToken}'";
+    /**
+     * perdor parametrized queries per te bere prevent sql injection
+     * provo me: 12345679'OR 1='1 si token
+     */
+    $username = mysqli_real_escape_string($conn,$username);
+    $password = md5(mysqli_real_escape_string($conn, $password));
+    $privateToken =(mysqli_real_escape_string($conn, $privateToken));
 
-    $result = mysqli_query($conn, $sql);
-    $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+    $stmt = $conn->prepare(     "SELECT * FROM admin WHERE username = ?
+                                and pasuord = ?
+                                and secret_token = ?");
 
-    $count = mysqli_num_rows($result);
+    $stmt->bind_param("sss",$username,$password,$privateToken);
+    $stmt->execute();
+    $result = $stmt->get_result();
 
-    return $params[] = array(
-        'row' => $row,
-        'authenticated' => $count
+     $params = array(
+        'row' => $result->fetch_assoc(),
+        'authenticated' => $result->num_rows
     );
+
+    $stmt->close();
+    $conn->close();
+    return $params;
+
+
+
+    /**
+     * ky kod eshte i pambrojtur ndaj sql injection
+     * provo me: 12345679'OR 1='1 si token
+     */
+//    $params = array();
+//    $row=false;
+//    $sql = "SELECT * FROM admin WHERE username = '{$username}'
+//                                and pasuord = '{$password}'
+//                                and secret_token = '{$privateToken}'";
+//
+//
+//
+//    $result = mysqli_query($conn, $sql);
+//    $count = mysqli_num_rows($result);
+//    if($count >0) {
+//        $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+//    }
+//
+//    $params = array(
+//        'row' => $row,
+//        'authenticated' => $count
+//    );
+//
+//    return $params;
 }
 
 ?>

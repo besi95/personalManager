@@ -17,7 +17,7 @@ while ($row = $result->fetch_assoc()) {
     $numri = $row['numri'];
     $tipi = $row['tipi'];
     $shteti = $row['shteti'];
-    $perdoruesId = $row['perdoruesId'];
+    $perdoruesId = $row['perdorues_id'];
     $zoteruesEmer = $row['zoterues'];
 
 
@@ -36,6 +36,7 @@ while ($row = $result->fetch_assoc()) {
 }
 
 $string .= '</kontakteTelefonike>';
+
 $xml = new SimpleXMLElement($string);
 Header('Content-type: text/xml');
 echo $xml->asXML();

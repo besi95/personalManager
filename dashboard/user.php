@@ -123,6 +123,12 @@ $totaliMbetur = formatFileSize(totaliMbetur($userId, $conn));
                     <ul class="nav navbar-nav navbar-right">
 
                         <li>
+                            <a href="../index.php">
+                                <i class="ti-home"></i>
+                                <p>Homepage</p>
+                            </a>
+                        </li>
+                        <li>
                             <a href="../src/logout.php">
                                 <i class="ti-user"></i>
                                 <p>Logout</p>
@@ -224,7 +230,7 @@ $totaliMbetur = formatFileSize(totaliMbetur($userId, $conn));
                             <div class="content">
                                 <div class="author">
                                     <img class="avatar border-white" src="../skin/images/lock.png" alt="..."/>
-                                    <h4 class="title">Besim Saraci<br/>
+                                    <h4 class="title"><?php echo $user['emri']. ' '.$user['mbiemri'] ?><br/>
                                     </h4>
                                 </div>
                                 <p class="description text-center">
@@ -240,11 +246,13 @@ $totaliMbetur = formatFileSize(totaliMbetur($userId, $conn));
                     <div class="col-lg-8 col-md-7">
                         <div class="card">
                             <?php
-                            foreach ($results as $result) {
-                                ?>
-                                <span style="color: #557eff;"><?php echo $result ?></span><br>
-                                <?php
-                            } ?>
+                            if(isset($results)) {
+                                foreach ($results as $result) {
+                                    ?>
+                                    <span style="color: #557eff;"><?php echo $result ?></span><br>
+                                    <?php
+                                }
+                            }?>
                             <div class="header">
                                 <h4 class="title">Edito Profilin</h4>
                             </div>
@@ -279,7 +287,7 @@ $totaliMbetur = formatFileSize(totaliMbetur($userId, $conn));
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label>Last Name</label>
+                                                <label>Mbiemri</label>
                                                 <input type="text" name="mbiemri" class="form-control border-input"
                                                        placeholder="Mbiemer" value="<?php echo $user['mbiemri'] ?>"
                                                        required>

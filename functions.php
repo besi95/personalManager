@@ -11,7 +11,7 @@
 function getBaseUrl()
 {
 
-    return "http://localhost/paw/personalManager/";
+    return "http://localhost/personalManager/";
 }
 
 function getActionUrl($action)
@@ -67,7 +67,8 @@ function getUserTotalFileSize($userId, $conn)
 /**
  * @param $userId
  * @param $conn
- * @return intgjej nr e kartave bankare te ruajtura nga useri
+ * @return int
+ * gjej nr e kartave bankare te ruajtura nga useri
  */
 function nrKartaveBankare($userId, $conn)
 {
@@ -125,7 +126,7 @@ function totaliMbetur($userId, $conn)
     $planiAktual = $planiAktual['code'];
     $madhesiaPlanit = $planet[$planiAktual];
     $totaliZene = getUserTotalFileSize($userId, $conn);
-    $totaliMbetur = intval($madhesiaPlanit - $totaliZene);
+    $totaliMbetur = $madhesiaPlanit - $totaliZene;
     return $totaliMbetur;
 }
 

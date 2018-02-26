@@ -80,7 +80,14 @@ if(isset($_COOKIE['registration_status'])) {
                 </div>
             </div>
 
-
+            <div class="form-group">
+                <label class="col-md-4 control-label" >Not a Robot ?</label>
+                <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <div class="g-recaptcha" data-sitekey="6LdU00UUAAAAADe7mxQhQjY7S5Ana4G6EGSPCyPa"></div>
+                    </div>
+                </div>
+            </div>
             <!-- Success message -->
             <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Success!.</div>
 

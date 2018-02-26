@@ -1,5 +1,15 @@
 <?php
 include 'header.php';
+include "../src/config.php";
+if(isset($_POST['submit'])){
+    $emri = $_POST['emri'];
+    $email = $_POST['email'];
+    $mesazhi = $_POST['mesazhi'];
+    $mesazhSql = "INSERT INTO `njoftime` (`user_name`, `mesazhi`, `user_email`) 
+    VALUES ('{$emri}', '{$mesazhi}', '$email');" ;
+    $result = $conn->query($mesazhSql);
+    header('Location: homepage.php');
+}
 ?>
 
 <div  class="jumbotron text-center homepage-hero">
@@ -48,7 +58,7 @@ include 'header.php';
         <div class="col-sm-4">
             <span class="glyphicon glyphicon-dashboard logo-small"></span>
             <h4 style="color:#303030;">Performancë</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
+            <p>Shpejtësi në aksesim dhe ngarkim të fileve.</p>
     </div>
     </div>
 </div>
@@ -68,13 +78,12 @@ include 'header.php';
                     <h1>Falas</h1>
                 </div>
                 <div class="panel-body">
-                    <p><strong>20</strong> Lorem</p>
                     <p><strong>5</strong> GB</p>
                 </div>
                 <div class="panel-footer">
                     <h3>$0.00</h3>
                     <h4>në muaj</h4>
-                    <button class="btn btn-lg">Regjistrohu</button>
+                    <a href="registration.php" class="btn btn-lg">Regjistrohu</a>
                 </div>
             </div>
         </div>
@@ -84,14 +93,13 @@ include 'header.php';
                     <h1>PRO</h1>
                 </div>
                 <div class="panel-body">
-                    <p><strong>50</strong> Lorem</p>
 
                     <p><strong>10</strong> GB</p>
                 </div>
                 <div class="panel-footer">
                     <h3>$15</h3>
                     <h4>në muaj</h4>
-                    <button class="btn btn-lg">Regjistrohu</button>
+                    <a href="registration.php" class="btn btn-lg">Regjistrohu</a>
                 </div>
             </div>
         </div>
@@ -101,13 +109,12 @@ include 'header.php';
                     <h1>PREMIUM</h1>
                 </div>
                 <div class="panel-body">
-                    <p><strong>10</strong> Sit</p>
                     <p><strong>20</strong> GB</p>
                 </div>
                 <div class="panel-footer">
                     <h3>$20</h3>
                     <h4>në muaj</h4>
-                    <button class="btn btn-lg">Regjistrohu</button>
+                    <a href="registration.php" class="btn btn-lg">Regjistrohu</a>
                 </div>
             </div>
         </div>
@@ -121,12 +128,8 @@ include 'header.php';
         <div class="about-container is-table-row">
         <div class="col-sm-8 col-same-height">
             <h2>Reth nesh</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                ut aliquip ex ea commodo consequat.</p>
+            <p>I krijuar në 2018, KeepItSAfe është website ku mund të ruani të gjitha informacionet tuaja personale dhe t'i aksesoni ato kudo që ndodheni. Ai do të jetë si një kujtesë e tretë për ju. Vlerat tona kryesore janë siguria dhe lehtësia. Me një staf të përgatitur dhe në shërbimin tuaj, KeepItSafe është zgjedhja më e mirë.
+                Informacionet tuaja nuk do të shikohen apo ndryshohen as nga administratori i aplikimit, falë mënyrës së konceptimit të aplikacionit.</p>
         </div>
         <div class="col-sm-4 col-same-height">
             <div class="row">
@@ -199,20 +202,22 @@ include 'header.php';
         </div>
         <div class="col-sm-7 slideanim">
             <div class="row">
+                <form method="post">
                 <div class="col-sm-6 form-group">
-                    <input class="form-control" id="name" name="name" placeholder="Emri" type="text" required>
+                    <input class="form-control" id="name" name="emri" placeholder="Emri" type="text" required>
                 </div>
                 <div class="col-sm-6 form-group">
                     <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
                 </div>
             </div>
-            <textarea class="form-control" id="comments" name="comments" placeholder="komenti" rows="5"></textarea><br>
-            <div class="row">
+            <textarea class="form-control" id="comments" name="mesazhi" placeholder="komenti" rows="5"></textarea><br>
+            <form class="row">
                 <div class="col-sm-12 form-group">
-                    <button class="btn btn-default pull-right" type="submit">Dërgo</button>
+                    <button class="btn btn-default pull-right" name="submit" type="submit">Dërgo</button>
                 </div>
+            </form>
             </div>
         </div>
     </div>
-</div>
+
 <?php include 'footer.php'; ?>

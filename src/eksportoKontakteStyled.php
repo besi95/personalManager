@@ -19,7 +19,7 @@ while ($row = $result->fetch_assoc()) {
     $numri = $row['numri'];
     $tipi = $row['tipi'];
     $shteti = $row['shteti'];
-    $perdoruesId = $row['perdoruesId'];
+    $perdoruesId = $row['perdorues_id'];
     $zoteruesEmer = $row['zoterues'];
 
 
@@ -38,7 +38,9 @@ while ($row = $result->fetch_assoc()) {
 
 $string .= '</kontakteTelefonike>';
 
-
+/**
+ * krijo filen XML dhe jepi permissions per read
+ */
 file_put_contents('xml/' . $userid . '.xml', $string);
 chmod('xml/' . $userid . '.xml', 0664);
 
@@ -46,9 +48,12 @@ chmod('xml/' . $userid . '.xml', 0664);
 $xml = new DOMDocument();
 $xml->load('xml/' . $userid . '.xml');
 
-$xsl = new DOMDocument;
+$xsl = new DOMDocument();
 $xsl->load('xslt/kontakt.xsl');
 
+/**
+ * formatoje dokumentin xml me xslt  krijuar me pare
+ */
 $proc = new XSLTProcessor();
 $proc->importStyleSheet($xsl);
 

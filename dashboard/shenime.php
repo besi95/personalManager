@@ -162,8 +162,7 @@ $userId = $_SESSION['user_id'];?>
                                             </td>
                                             <td class="shenime-veprim">
                                                 <a href="<?php echo '../src/fshi_shenime.php?shenimId='. $shenime['shenime_id']; ?>">
-                                                    Fshi</a> |
-                                                <a href="#">Edito</a>
+                                                    Fshi</a>
                                             </td>
                                         </tr>
                                     <?php } ?>

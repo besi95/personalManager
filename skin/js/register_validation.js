@@ -11,10 +11,10 @@ $(document).ready(function () {
                 validators: {
                     stringLength: {
                         min: 2,
-                        message: 'Name must be at least two characters'
+                        message: 'Emri duhet të jetë të paktën dy karaktere'
                     },
                     notEmpty: {
-                        message: 'Please enter your First Name'
+                        message: 'Ju lutem vendosni emrin'
                     }
                 }
             },
@@ -22,10 +22,10 @@ $(document).ready(function () {
                 validators: {
                     stringLength: {
                         min: 2,
-                        message: 'Lastname must be at least 2 characters'
+                        message: 'Mbiemri duhet të jetë të paktën dy karaktere'
                     },
                     notEmpty: {
-                        message: 'Please enter your Last Name'
+                        message: 'Ju lutem vendosni mbiemrin'
                     }
                 }
             },
@@ -33,10 +33,10 @@ $(document).ready(function () {
                 validators: {
                     stringLength: {
                         min: 8,
-                        message: 'Username must be at least 8 characters'
+                        message: 'Username duhet të jetë të paktën 8 karaktere'
                     },
                     notEmpty: {
-                        message: 'Please enter your Username'
+                        message: 'Ju lutem vendosni username'
                     }
                 }
             },
@@ -44,14 +44,14 @@ $(document).ready(function () {
                 validators: {
                     stringLength: {
                         min: 8,
-                        message: "Password must be minimum 8 characters."
+                        message: "Password duhet të jetë të paktën 8 karaktere"
                     },
                     notEmpty: {
-                        message: 'Please enter your Password.'
+                        message: 'Ju lutem vendosni fjalekalimin tuaj.'
                     },
                     regexp: {
                         regexp: '^.*(?=.{7,})(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).*$',
-                        message: 'Password must contain uppercase,number and special character.'
+                        message: 'Fjalekalimi duhet të mbajë të paktën një shkronjë të madhe, një karakter special dhe një numër.'
                     }
                 }
             },
@@ -62,20 +62,20 @@ $(document).ready(function () {
                     },
                     identical: {
                         field: 'user_password',
-                        message: 'The password and its confirm are not the same'
+                        message: 'Fjalekalimet nuk përputhen'
                     },
                     notEmpty: {
-                        message: 'Please confirm your Password'
+                        message: 'Ju lutem shkruani fjalekalimin'
                     }
                 }
             },
             email: {
                 validators: {
                     notEmpty: {
-                        message: 'Please enter your Email Address'
+                        message: 'Ju lutem shkruani emailin tuaj'
                     },
                     emailAddress: {
-                        message: 'Please enter a valid Email Address'
+                        message: 'Vendosni një adresë emaili të vlefshme'
                     }
                 }
             },
@@ -84,10 +84,10 @@ $(document).ready(function () {
                     stringLength: {
                         min: 10,
                         max: 10,
-                        message: 'Number must be 10 digits.'
+                        message: 'Numri duhet të ketë 10 shifra.'
                     },
                     notEmpty: {
-                        message: 'Please enter your Contact No.'
+                        message: 'Vendosni numrin e kontaktit.'
                     }
                 }
             }

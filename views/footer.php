@@ -3,7 +3,7 @@
     <a href="#myPage" title="To Top">
         <span class="glyphicon glyphicon-chevron-up"></span>
     </a>
-    <p>Copyright Besim Saraci</a></p>
+    <p>Copyright Keep It Safe</a></p>
 </footer>
 
 <script src="../skin/js/custom_scripts.js"></script>

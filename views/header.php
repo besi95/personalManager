@@ -8,6 +8,7 @@ session_start();
     <title>Personal Manager</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="96x96" href="../dashboard/assets/img/locked-padlock-with-chain.png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <link href="../css/style.css" type="text/css">
@@ -17,6 +18,7 @@ session_start();
     <link rel="stylesheet" href="../skin/css/style.css">
     <script src='../bootstrap/js/jquery.min.js'></script>
     <script src='../bootstrap/bootstrap-3.2.0/dist/js/bootstrap.min.js'></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </head>
 <div id="myPage"></div>

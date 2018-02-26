@@ -5,7 +5,7 @@ if (!isset($_SESSION['admin_logged_in'])) {
     header('Location: ../views/admin_login.php');
 }
 include '../src/config.php';
-$userId = $_SESSION['user_id'];
+$userId = $_SESSION['admin_id'];
 $userSql = "SELECT * FROM `perdorues`";
 $users = $conn->query($userSql);
 

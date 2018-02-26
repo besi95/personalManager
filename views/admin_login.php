@@ -1,29 +1,13 @@
 <?php
 include ('../functions.php');
 $loginAction = getActionUrl('admin_login');
-echo '<h1>'.$error.'</h1>';
+include ('header.php');
 ?>
 <!DOCTYPE html>
 <html lang="en" >
 
-<head>
-    <meta charset="UTF-8">
-    <title>Admin Login</title>
-    <script src="http://localhost/paw/personalManager/bootstrap/modernizr.min.js" type="text/javascript"></script>
-    <link rel='stylesheet prefetch' href='http://localhost/paw/personalManager/bootstrap/bootstrap-3.2.0/dist/css/bootstrap.min.css'>
-    <link rel='stylesheet prefetch' href='http://localhost/paw/personalManager/bootstrap/bootstrap-3.2.0/dist/css/bootstrap-theme.min.css'>
-    <link rel='stylesheet prefetch' href='http://localhost/paw/personalManager/bootstrap/bootstrap-validator/css/bootstrapValidator.min.css'>
-    <link rel="stylesheet" href="http://localhost/paw/personalManager/skin/css/style.css">
-    <script src='http://localhost/paw/personalManager/bootstrap/js/jquery.min.js'></script>
-    <script src='http://localhost/paw/personalManager/bootstrap/bootstrap-3.2.0/dist/js/bootstrap.min.js'></script>
-    <script src='http://localhost/paw/personalManager/bootstrap/bootstrap-validator/js/bootstrapvalidator.min.js'></script>
-
-
-</head>
-
-<body>
-
-<div class="container">
+<br><br>
+<div class="container" style="min-height: 730px">
 
     <form class="well form-horizontal admin-well-panel" action="<?php echo $loginAction?>" method="post"  id="login_form">
         <fieldset>
@@ -37,7 +21,7 @@ echo '<h1>'.$error.'</h1>';
                 <div class="col-md-4 inputGroupContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                        <input name="admin_user"  placeholder="User Name" class="form-control"  type="text">
+                        <input name="admin_user"  placeholder="User Name" class="form-control"  type="text" required>
                     </div>
                 </div>
             </div>
@@ -50,7 +34,7 @@ echo '<h1>'.$error.'</h1>';
                 <div class="col-md-4 inputGroupContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                        <input name="user_password" placeholder="Password" class="form-control"  type="password">
+                        <input name="user_password" placeholder="Password" class="form-control"  type="password" required>
                     </div>
                 </div>
             </div>
@@ -62,7 +46,7 @@ echo '<h1>'.$error.'</h1>';
                 <div class="col-md-4 inputGroupContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-qrcode"></i></span>
-                        <input name="private_token" placeholder="Token" class="form-control"  type="password">
+                        <input name="private_token" placeholder="Token" class="form-control"  type="password" required>
                     </div>
                 </div>
             </div>
@@ -81,11 +65,6 @@ echo '<h1>'.$error.'</h1>';
         </fieldset>
     </form>
 </div>
-</div>
+<?php include 'footer.php';?>
 
 
-
-
-</body>
-
-</html>
